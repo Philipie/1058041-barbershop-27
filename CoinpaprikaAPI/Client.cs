@@ -1,2 +1,5 @@
 ﻿using CoinpaprikaAPI.Base;
-using Coinpaprik
+using CoinpaprikaAPI.Entity;
+using CoinpaprikaAPI.JsonConverters;
+using CoinpaprikaAPI.Models;
+using Coinpapri
