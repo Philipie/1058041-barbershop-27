@@ -16,4 +16,9 @@ namespace CoinpaprikaAPI
 {
     /// <summary>
     /// CoinPaprika API Client
-    /// </su
+    /// </summary>
+    public class Client
+    {
+        private readonly string _apiBaseUrl;
+
+        
