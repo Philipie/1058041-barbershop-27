@@ -21,4 +21,6 @@ namespace CoinpaprikaAPI
     {
         private readonly string _apiBaseUrl;
 
-        
+        public Client(string version = "v1")
+        {
+            _apiBaseUrl = $"https://api.coi
