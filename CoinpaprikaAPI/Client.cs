@@ -23,4 +23,10 @@ namespace CoinpaprikaAPI
 
         public Client(string version = "v1")
         {
-            _apiBaseUrl = $"https://api.coi
+            _apiBaseUrl = $"https://api.coinpaprika.com/{version}";
+        }
+
+        #region global
+
+        /// <summary>
+        /// Get global
