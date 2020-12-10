@@ -29,4 +29,6 @@ namespace CoinpaprikaAPI
         #region global
 
         /// <summary>
-        /// Get global
+        /// Get global information
+        /// </summary>
+        public async Task<CoinPaprikaEntity<Global>> GetClobalsAsync()
