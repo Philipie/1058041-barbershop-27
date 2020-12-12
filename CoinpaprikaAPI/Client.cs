@@ -32,3 +32,7 @@ namespace CoinpaprikaAPI
         /// Get global information
         /// </summary>
         public async Task<CoinPaprikaEntity<Global>> GetClobalsAsync()
+        {
+            var client = BaseClient.GetClient();
+            
+            var requestUrl
