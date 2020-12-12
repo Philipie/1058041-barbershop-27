@@ -35,4 +35,8 @@ namespace CoinpaprikaAPI
         {
             var client = BaseClient.GetClient();
             
-            var requestUrl
+            var requestUrl = $"{_apiBaseUrl}/global";
+            
+            var request = new HttpRequestMessage()
+            {
+ 
