@@ -45,4 +45,7 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return 
+            return new CoinPaprikaEntity<Global>(response, false, !response.IsSuccessStatusCode, null);
+        }
+
+        #endregi
