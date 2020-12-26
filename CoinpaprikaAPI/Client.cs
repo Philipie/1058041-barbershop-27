@@ -48,4 +48,9 @@ namespace CoinpaprikaAPI
             return new CoinPaprikaEntity<Global>(response, false, !response.IsSuccessStatusCode, null);
         }
 
-        #endregi
+        #endregion
+
+        #region coins
+        /// <summary>
+        /// Get all coins listed on coinpaprika
+  
