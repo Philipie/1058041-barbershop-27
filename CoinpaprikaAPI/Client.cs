@@ -53,4 +53,6 @@ namespace CoinpaprikaAPI
         #region coins
         /// <summary>
         /// Get all coins listed on coinpaprika
-  
+        /// </summary>
+        public async Task<CoinPaprikaEntity<List<CoinInfo>>> GetCoinsAsync()
+        {
