@@ -56,3 +56,6 @@ namespace CoinpaprikaAPI
         /// </summary>
         public async Task<CoinPaprikaEntity<List<CoinInfo>>> GetCoinsAsync()
         {
+            var client = BaseClient.GetClient();
+
+            var requestUrl = $"
