@@ -74,4 +74,6 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Get coin by ID
         /// </summary>
-        /// <param name="id">Id of c
+        /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
+        /// <returns></returns>
+        
