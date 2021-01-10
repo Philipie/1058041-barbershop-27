@@ -71,4 +71,7 @@ namespace CoinpaprikaAPI
             return new CoinPaprikaEntity<List<CoinInfo>>(response, false, !response.IsSuccessStatusCode, null);
         }
 
-       
+        /// <summary>
+        /// Get coin by ID
+        /// </summary>
+        /// <param name="id">Id of c
