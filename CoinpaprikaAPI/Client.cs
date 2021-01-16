@@ -77,4 +77,6 @@ namespace CoinpaprikaAPI
         /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
         /// <returns></returns>
         public async Task<CoinPaprikaEntity<ExtendedCoinInfo>> GetCoinByIdAsync(string id)
-   
+        {
+            if (string.IsNullOrWhiteSpace(id))
+                throw new NotSupportedException("i
