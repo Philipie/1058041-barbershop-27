@@ -76,4 +76,5 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
         /// <returns></returns>
-        
+        public async Task<CoinPaprikaEntity<ExtendedCoinInfo>> GetCoinByIdAsync(string id)
+   
