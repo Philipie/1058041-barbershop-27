@@ -79,4 +79,8 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<ExtendedCoinInfo>> GetCoinByIdAsync(string id)
         {
             if (string.IsNullOrWhiteSpace(id))
-                throw new NotSupportedException("i
+                throw new NotSupportedException("id must be defined");
+
+            var client = BaseClient.GetClient();
+
+            var requestUrl 
