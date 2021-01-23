@@ -98,4 +98,5 @@ namespace CoinpaprikaAPI
 
         /// <summary>
         /// Get twitter timeline for coin Id
-        /// </summ
+        /// </summary>
+        /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</pa
