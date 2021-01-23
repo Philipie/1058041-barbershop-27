@@ -92,3 +92,6 @@ namespace CoinpaprikaAPI
             };
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
+
+            return new CoinPaprikaEntity<ExtendedCoinInfo>(response, false, !response.IsSuccessStatusCode);
+      
