@@ -99,4 +99,6 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Get twitter timeline for coin Id
         /// </summary>
-        /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</pa
+        /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
+        /// <returns></returns>
+        public async Task<CoinPaprikaEntity<List<Coi
