@@ -101,4 +101,6 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
         /// <returns></returns>
-        public async Task<CoinPaprikaEntity<List<Coi
+        public async Task<CoinPaprikaEntity<List<CoinTweetInfo>>> GetTwitterTimelineForCoinAsync(string id)
+        {
+            if (string.IsNullOrW
