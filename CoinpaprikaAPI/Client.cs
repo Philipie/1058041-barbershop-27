@@ -103,4 +103,7 @@ namespace CoinpaprikaAPI
         /// <returns></returns>
         public async Task<CoinPaprikaEntity<List<CoinTweetInfo>>> GetTwitterTimelineForCoinAsync(string id)
         {
-            if (string.IsNullOrW
+            if (string.IsNullOrWhiteSpace(id))
+                throw new NotSupportedException("id must be defined");
+
+            v
