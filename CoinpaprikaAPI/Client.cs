@@ -108,4 +108,7 @@ namespace CoinpaprikaAPI
 
             var client = BaseClient.GetClient();
 
-            var requestUrl = $"{_apiBaseUrl
+            var requestUrl = $"{_apiBaseUrl}/coins/{id}/twitter";
+
+            var request = new HttpRequestMessage()
+     
