@@ -118,4 +118,5 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return
+            return new CoinPaprikaEntity<List<CoinTweetInfo>>(response, false, !response.IsSuccessStatusCode);
+   
