@@ -119,4 +119,9 @@ namespace CoinpaprikaAPI
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
             return new CoinPaprikaEntity<List<CoinTweetInfo>>(response, false, !response.IsSuccessStatusCode);
-   
+        }
+
+        /// <summary>
+        /// Get coin events by coin Id
+        /// </summary>
+      
