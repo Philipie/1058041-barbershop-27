@@ -125,4 +125,5 @@ namespace CoinpaprikaAPI
         /// Get coin events by coin Id
         /// </summary>
         /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
-        /// <retur
+        /// <returns></returns>
+        public async Task<CoinPaprikaEntity<List<CoinEventInfo>>> GetEventsForCoinA
