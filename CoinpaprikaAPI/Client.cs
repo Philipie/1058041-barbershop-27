@@ -129,4 +129,6 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<List<CoinEventInfo>>> GetEventsForCoinAsync(string id)
         {
             if (string.IsNullOrWhiteSpace(id))
-                t
+                throw new NotSupportedException("id must be defined");
+
+            var client = BaseClient.GetClie
