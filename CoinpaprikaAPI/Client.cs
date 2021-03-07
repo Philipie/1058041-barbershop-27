@@ -131,4 +131,8 @@ namespace CoinpaprikaAPI
             if (string.IsNullOrWhiteSpace(id))
                 throw new NotSupportedException("id must be defined");
 
-            var client = BaseClient.GetClie
+            var client = BaseClient.GetClient();
+
+            var requestUrl = $"{_apiBaseUrl}/coins/{id}/events";
+
+            var request = new HttpR
