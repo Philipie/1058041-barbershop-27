@@ -141,4 +141,6 @@ namespace CoinpaprikaAPI
                 RequestUri = new Uri(requestUrl)
             };
 
-            var response = await client.SendA
+            var response = await client.SendAsync(request).ConfigureAwait(false);
+
+            return new CoinPaprikaEntity<List<CoinEventInf
