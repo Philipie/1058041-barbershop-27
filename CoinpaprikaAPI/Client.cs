@@ -143,4 +143,8 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new CoinPaprikaEntity<List<CoinEventInf
+            return new CoinPaprikaEntity<List<CoinEventInfo>>(response, false, !response.IsSuccessStatusCode);
+        }
+
+        /// <summary>
+        /
