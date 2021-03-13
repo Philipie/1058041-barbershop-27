@@ -147,4 +147,6 @@ namespace CoinpaprikaAPI
         }
 
         /// <summary>
-        /
+        /// Get exchanges by coin Id
+        /// </summary>
+        /// <param name="id">Id of coin to 
