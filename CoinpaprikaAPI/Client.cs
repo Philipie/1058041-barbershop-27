@@ -149,4 +149,6 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Get exchanges by coin Id
         /// </summary>
-        /// <param name="id">Id of coin to 
+        /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
+        /// <returns></returns>
+        public async Task<CoinPaprika
