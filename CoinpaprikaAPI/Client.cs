@@ -151,4 +151,6 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
         /// <returns></returns>
-        public async Task<CoinPaprika
+        public async Task<CoinPaprikaEntity<List<ExchangeInfo>>> GetExchangesForCoinAsync(string id)
+        {
+            if (string.IsNullOrWhiteSpac
