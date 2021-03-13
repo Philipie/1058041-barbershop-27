@@ -153,4 +153,7 @@ namespace CoinpaprikaAPI
         /// <returns></returns>
         public async Task<CoinPaprikaEntity<List<ExchangeInfo>>> GetExchangesForCoinAsync(string id)
         {
-            if (string.IsNullOrWhiteSpac
+            if (string.IsNullOrWhiteSpace(id))
+                throw new NotSupportedException("id must be defined");
+
+            var client = BaseClient.Get
