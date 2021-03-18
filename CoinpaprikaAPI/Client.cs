@@ -160,4 +160,7 @@ namespace CoinpaprikaAPI
 
             var requestUrl = $"{_apiBaseUrl}/coins/{id}/exchanges";
 
-            var request = new Ht
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpMethod.Get,
+                RequestUri = 
