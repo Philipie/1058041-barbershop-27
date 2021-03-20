@@ -173,4 +173,6 @@ namespace CoinpaprikaAPI
         }
 
         /// <summary>
-        /// Get mar
+        /// Get markets by coin Id
+        /// </summary>
+        /// <param name="id">Id of coin to return e.g. btc-bitcoin
