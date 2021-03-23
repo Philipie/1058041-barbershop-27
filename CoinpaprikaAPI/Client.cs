@@ -175,4 +175,5 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Get markets by coin Id
         /// </summary>
-        /// <param name="id">Id of coin to return e.g. btc-bitcoin
+        /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
+        /// <param name="quotes">Comma separated list of quotes to re
