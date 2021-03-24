@@ -176,4 +176,5 @@ namespace CoinpaprikaAPI
         /// Get markets by coin Id
         /// </summary>
         /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
-        /// <param name="quotes">Comma separated list of quotes to re
+        /// <param name="quotes">Comma separated list of quotes to return. Currently allowed values: USD, BTC, ETH, PLN</param>
+        public async Task<CoinPaprikaE
