@@ -180,4 +180,8 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<List<MarketInfo>>> GetMarketsForCoinAsync(string id, string[] quotes = null)
         {
             if (string.IsNullOrWhiteSpace(id))
-                throw new NotSupportedException("id must be 
+                throw new NotSupportedException("id must be defined");
+
+            var client = BaseClient.GetClient();
+
+            var quotesString = quotes
