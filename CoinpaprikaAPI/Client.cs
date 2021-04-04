@@ -199,4 +199,7 @@ namespace CoinpaprikaAPI
             return new CoinPaprikaEntity<List<MarketInfo>>(response, false, !response.IsSuccessStatusCode);
         }
 
-        /// <summary
+        /// <summary>
+        /// Latest Open/High/Low/Close values with volume and market_cap by coin Id
+        /// </summary>
+        
