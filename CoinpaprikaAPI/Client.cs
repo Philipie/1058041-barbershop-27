@@ -186,4 +186,7 @@ namespace CoinpaprikaAPI
 
             var quotesString = quotes?.ToArrayString() ?? "USD";
 
-            var requestUrl = $"{_apiBaseUrl}/coins/{id}/marke
+            var requestUrl = $"{_apiBaseUrl}/coins/{id}/markets".AddParameterToUrl("quotes", quotesString);
+
+            var request = new HttpRequestMessage()
+       
