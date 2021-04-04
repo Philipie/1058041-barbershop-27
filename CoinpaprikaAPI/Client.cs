@@ -196,4 +196,7 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new CoinPapr
+            return new CoinPaprikaEntity<List<MarketInfo>>(response, false, !response.IsSuccessStatusCode);
+        }
+
+        /// <summary
