@@ -206,4 +206,5 @@ namespace CoinpaprikaAPI
         /// <param name="quote">returned data quote (available values: usd btc)</param>
         public async Task<CoinPaprikaEntity<List<OhlcValue>>> GetLatestOhlcForCoinAsync(string id, string quote = "USD")
         {
-         
+            if (string.IsNullOrWhiteSpace(id))
+                throw new NotSupportedException("id must be defin
