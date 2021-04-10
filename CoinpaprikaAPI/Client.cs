@@ -207,4 +207,8 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<List<OhlcValue>>> GetLatestOhlcForCoinAsync(string id, string quote = "USD")
         {
             if (string.IsNullOrWhiteSpace(id))
-                throw new NotSupportedException("id must be defin
+                throw new NotSupportedException("id must be defined");
+
+            var client = BaseClient.GetClient();
+
+            var requestUrl = $"{_apiBas
