@@ -227,4 +227,5 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Historical Open/High/Low/Close values with volume and market_cap by coin Id
         /// </summary>
-        /// <param name="id">i
+        /// <param name="id">id of the coin</param>
+        /// <param name="startTime">start point for historical data</par
