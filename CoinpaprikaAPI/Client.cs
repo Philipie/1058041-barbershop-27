@@ -232,4 +232,4 @@ namespace CoinpaprikaAPI
         /// <param name="endTime">end point for historical data</param>
         /// <param name="limit">limit of result rows (max 5000)</param>
         /// <param name="quote">returned data quote (available values: usd, btc)</param>
-        public async Task<CoinPaprikaEntity<List<OhlcValue>>> GetHistoricalOhlcForCoinA
+        public async Task<CoinPaprikaEntity<List<OhlcValue>>> GetHistoricalOhlcForCoinAsync(string id, DateTimeOffset startTime, DateTimeOffset endTime = default, int limit = 1000, string quote =
