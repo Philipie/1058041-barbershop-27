@@ -235,4 +235,7 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<List<OhlcValue>>> GetHistoricalOhlcForCoinAsync(string id, DateTimeOffset startTime, DateTimeOffset endTime = default, int limit = 1000, string quote = "USD")
         {
             if (string.IsNullOrWhiteSpace(id))
-                throw new Not
+                throw new NotSupportedException("id must be defined");
+
+            if (limit < 1 || limit > 366)
+          
