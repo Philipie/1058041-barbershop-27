@@ -241,4 +241,6 @@ namespace CoinpaprikaAPI
                 throw new ArgumentOutOfRangeException(nameof(limit), "limit must be between 1 and 250");
 
 
-  
+            var client = BaseClient.GetClient();
+
+            var requestUrl = $"{_apiBaseUrl}/coins/{id}/
