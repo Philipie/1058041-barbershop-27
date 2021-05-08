@@ -245,4 +245,6 @@ namespace CoinpaprikaAPI
 
             var requestUrl = $"{_apiBaseUrl}/coins/{id}/ohlcv/historical".
                 AddParameterToUrl("start", startTime.ToUnixTimeSeconds()).
-                AddParameterToUrl("end", endTime == default ? DateTimeOffset.Now.ToUnixTimeSeconds() : endTime.To
+                AddParameterToUrl("end", endTime == default ? DateTimeOffset.Now.ToUnixTimeSeconds() : endTime.ToUnixTimeSeconds()).
+                AddParameterToUrl("limit", limit).
+                Add
