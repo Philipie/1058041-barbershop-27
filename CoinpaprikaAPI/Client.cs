@@ -250,4 +250,6 @@ namespace CoinpaprikaAPI
                 AddParameterToUrl("quote", quote);
 
             var request = new HttpRequestMessage()
-          
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri(
