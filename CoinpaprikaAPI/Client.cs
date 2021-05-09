@@ -257,4 +257,8 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new CoinPaprikaEntity<List<OhlcValue>>(response, false, !response.IsSucc
+            return new CoinPaprikaEntity<List<OhlcValue>>(response, false, !response.IsSuccessStatusCode);
+        }
+
+        /// <summary>
+        /// Latest Open/High/Low/Close values with
