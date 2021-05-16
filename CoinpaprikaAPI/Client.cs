@@ -265,4 +265,6 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
         /// <param name="quote">returned data quote (available values: usd btc)</param>
-        public async Task<CoinPaprikaEntity<List<OhlcValue>>> GetToda
+        public async Task<CoinPaprikaEntity<List<OhlcValue>>> GetTodayOhlcForCoinAsync(string id, string quote = "USD")
+        {
+            if (string.IsNullOrWhiteSpa
