@@ -264,4 +264,5 @@ namespace CoinpaprikaAPI
         /// Latest Open/High/Low/Close values with volume and market_cap by coin Id
         /// </summary>
         /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
-        /// <param name="quote">returned data quote (availab
+        /// <param name="quote">returned data quote (available values: usd btc)</param>
+        public async Task<CoinPaprikaEntity<List<OhlcValue>>> GetToda
