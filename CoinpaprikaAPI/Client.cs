@@ -263,4 +263,5 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Latest Open/High/Low/Close values with volume and market_cap by coin Id
         /// </summary>
-        /// <param name="id">Id of coin t
+        /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
+        /// <param name="quote">returned data quote (availab
