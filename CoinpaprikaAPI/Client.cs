@@ -274,4 +274,7 @@ namespace CoinpaprikaAPI
 
             var requestUrl = $"{_apiBaseUrl}/coins/{id}/ohlcv/today".AddParameterToUrl("quote", quote);
 
-            var request = new HttpRequestMessag
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpMethod.Get,
+                RequestUri = 
