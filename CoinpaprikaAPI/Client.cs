@@ -280,4 +280,6 @@ namespace CoinpaprikaAPI
                 RequestUri = new Uri(requestUrl)
             };
 
-            var response = await client.SendAsync(reque
+            var response = await client.SendAsync(request).ConfigureAwait(false);
+
+            return new CoinPaprikaEntity<List<OhlcValue>>(response, 
