@@ -282,4 +282,11 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new CoinPaprikaEntity<List<OhlcValue>>(response, 
+            return new CoinPaprikaEntity<List<OhlcValue>>(response, false, !response.IsSuccessStatusCode);
+        }
+
+
+        #endregion
+
+        #region tickers
+        /// <summary>
