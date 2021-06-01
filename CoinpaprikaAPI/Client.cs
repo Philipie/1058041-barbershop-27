@@ -290,3 +290,6 @@ namespace CoinpaprikaAPI
 
         #region tickers
         /// <summary>
+        /// Get ticker information for all coins
+        /// </summary>
+        public async Task<CoinPap
