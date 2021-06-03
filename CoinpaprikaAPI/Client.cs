@@ -292,4 +292,6 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Get ticker information for all coins
         /// </summary>
-        public async Task<CoinPap
+        public async Task<CoinPaprikaEntity<List<TickerWithQuotesInfo>>> GetTickersAsync(string[] quotes = null)
+        {
+            var client = BaseClie
