@@ -294,4 +294,7 @@ namespace CoinpaprikaAPI
         /// </summary>
         public async Task<CoinPaprikaEntity<List<TickerWithQuotesInfo>>> GetTickersAsync(string[] quotes = null)
         {
-            var client = BaseClie
+            var client = BaseClient.GetClient();
+
+            if (quotes?.Any(q => !q.IsSupportedQuoteSymbol()) ?? false)
+                th
