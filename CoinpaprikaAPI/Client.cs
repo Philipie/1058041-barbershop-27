@@ -297,4 +297,4 @@ namespace CoinpaprikaAPI
             var client = BaseClient.GetClient();
 
             if (quotes?.Any(q => !q.IsSupportedQuoteSymbol()) ?? false)
-                th
+                throw new ArgumentOutOfRangeException(nameof(quotes), "The passed quotes contains invalid
