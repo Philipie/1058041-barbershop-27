@@ -301,4 +301,6 @@ namespace CoinpaprikaAPI
 
             var quotesString = quotes?.ToArrayString() ?? "USD";
 
-            var re
+            var requestUrl = $"{_apiBaseUrl}/tickers".AddParameterToUrl("quotes", quotesString);
+
+            var reque
