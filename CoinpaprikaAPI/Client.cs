@@ -303,4 +303,7 @@ namespace CoinpaprikaAPI
 
             var requestUrl = $"{_apiBaseUrl}/tickers".AddParameterToUrl("quotes", quotesString);
 
-            var reque
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpMethod.Get,
+                RequestUri = ne
