@@ -309,4 +309,8 @@ namespace CoinpaprikaAPI
                 RequestUri = new Uri(requestUrl)
             };
 
-            var response = await client.SendAsync(request).Configu
+            var response = await client.SendAsync(request).ConfigureAwait(false);
+
+            var json = await response.Content.ReadAsStringAsync();
+
+            return new Coi
