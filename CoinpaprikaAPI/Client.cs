@@ -313,4 +313,9 @@ namespace CoinpaprikaAPI
 
             var json = await response.Content.ReadAsStringAsync();
 
-            return new CoinPaprikaEntity<List<TickerWithQuotesInfo>>(response, false, !response.IsSuccessStatusCode)
+            return new CoinPaprikaEntity<List<TickerWithQuotesInfo>>(response, false, !response.IsSuccessStatusCode);
+        }
+
+        /// <summary>
+        /// Get ticker information for specific coin
+        /// <
