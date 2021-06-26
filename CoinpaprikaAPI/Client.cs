@@ -318,4 +318,6 @@ namespace CoinpaprikaAPI
 
         /// <summary>
         /// Get ticker information for specific coin
-        /// <
+        /// </summary>
+        /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
+  
