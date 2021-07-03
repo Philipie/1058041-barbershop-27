@@ -321,4 +321,7 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="id">Id of coin to return e.g. btc-bitcoin, eth-ethereum</param>
         /// <param name="quotes">Comma separated list of quotes to return. Currently allowed values: USD, BTC, ETH</param>
-        public async Task<CoinPaprikaEntity<TickerInfo>> GetTickerFo
+        public async Task<CoinPaprikaEntity<TickerInfo>> GetTickerForIdAsync(string id)
+        {
+            if (string.IsNullOrWhiteSpace(id))
+                throw new NotSu
