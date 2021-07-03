@@ -324,4 +324,8 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<TickerInfo>> GetTickerForIdAsync(string id)
         {
             if (string.IsNullOrWhiteSpace(id))
-                throw new NotSu
+                throw new NotSupportedException("id must be defined");
+
+            var client = BaseClient.GetClient();
+
+            var re
