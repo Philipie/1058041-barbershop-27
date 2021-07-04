@@ -328,4 +328,8 @@ namespace CoinpaprikaAPI
 
             var client = BaseClient.GetClient();
 
-            var re
+            var requestUrl = $"{_apiBaseUrl}/ticker/{id}";
+
+            var request = new HttpRequestMessage()
+            {
+ 
