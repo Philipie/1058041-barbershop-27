@@ -340,4 +340,8 @@ namespace CoinpaprikaAPI
 
             var json = await response.Content.ReadAsStringAsync();
 
-            return new CoinPaprikaEntity<TickerInfo>(respo
+            return new CoinPaprikaEntity<TickerInfo>(response, false, !response.IsSuccessStatusCode);
+        }
+
+        /// <summary>
+        /// Get histo
