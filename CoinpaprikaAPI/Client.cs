@@ -346,4 +346,6 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Get historical tickers for specific coin
         /// </summary>
-        /// <param name="id">id of the coi
+        /// <param name="id">id of the coin</param>
+        /// <param name="startTime">start point for historical data</param>
+        /// <param name
