@@ -338,4 +338,6 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            var json = await response.
+            var json = await response.Content.ReadAsStringAsync();
+
+            return new CoinPaprikaEntity<TickerInfo>(respo
