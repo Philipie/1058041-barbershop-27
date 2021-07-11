@@ -348,4 +348,5 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="id">id of the coin</param>
         /// <param name="startTime">start point for historical data</param>
-        /// <param name
+        /// <param name="endTime">end point for historical data</param>
+        /// <param name="limit">limit of res
