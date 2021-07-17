@@ -352,4 +352,5 @@ namespace CoinpaprikaAPI
         /// <param name="limit">limit of result rows (max 5000)</param>
         /// <param name="quote">returned data quote (available values: usd, btc)</param>
         /// <param name="interval">returned points interval</param>
-        /// <returns
+        /// <returns></returns>
+        public async Task<CoinPaprikaEntity<List<HistoricalTickerInfo>>> GetHistoric
