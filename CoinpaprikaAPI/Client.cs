@@ -350,4 +350,6 @@ namespace CoinpaprikaAPI
         /// <param name="startTime">start point for historical data</param>
         /// <param name="endTime">end point for historical data</param>
         /// <param name="limit">limit of result rows (max 5000)</param>
-        /// <param name="quote">returned data quote (available values:
+        /// <param name="quote">returned data quote (available values: usd, btc)</param>
+        /// <param name="interval">returned points interval</param>
+        /// <returns
