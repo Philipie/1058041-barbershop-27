@@ -355,4 +355,5 @@ namespace CoinpaprikaAPI
         /// <returns></returns>
         public async Task<CoinPaprikaEntity<List<HistoricalTickerInfo>>> GetHistoricalTickerForIdAsync(string id, DateTimeOffset startTime, DateTimeOffset endTime = default, int limit = 1000, string quote = "USD", TickerInterval interval = TickerInterval.FifteenMinutes)
         {
-  
+            if (string.IsNullOrWhiteSpace(id))
+                throw new NotSupportedException("id must be 
