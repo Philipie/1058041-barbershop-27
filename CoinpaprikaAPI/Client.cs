@@ -353,4 +353,6 @@ namespace CoinpaprikaAPI
         /// <param name="quote">returned data quote (available values: usd, btc)</param>
         /// <param name="interval">returned points interval</param>
         /// <returns></returns>
-        public async Task<CoinPaprikaEntity<List<HistoricalTickerInfo>>> GetHistoricalTickerForIdAsync(string id, DateTimeOffset startTime, DateTimeOffset endTime = default, int limit = 10
+        public async Task<CoinPaprikaEntity<List<HistoricalTickerInfo>>> GetHistoricalTickerForIdAsync(string id, DateTimeOffset startTime, DateTimeOffset endTime = default, int limit = 1000, string quote = "USD", TickerInterval interval = TickerInterval.FifteenMinutes)
+        {
+  
