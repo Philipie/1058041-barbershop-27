@@ -361,4 +361,7 @@ namespace CoinpaprikaAPI
             if (limit < 1 || limit > 5000)
                 throw new ArgumentOutOfRangeException(nameof(limit), "limit must be between 1 and 250");
 
-            var client = BaseClient.GetClient
+            var client = BaseClient.GetClient();
+
+            var requestUrl = $"{_apiBaseUrl}/tickers/{id}/historical".
+                AddParam
