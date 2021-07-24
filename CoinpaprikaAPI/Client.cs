@@ -364,4 +364,5 @@ namespace CoinpaprikaAPI
             var client = BaseClient.GetClient();
 
             var requestUrl = $"{_apiBaseUrl}/tickers/{id}/historical".
-                AddParam
+                AddParameterToUrl("start", startTime.ToUnixTimeSeconds()).
+                AddParameterToUrl("end",
