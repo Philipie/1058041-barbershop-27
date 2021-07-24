@@ -366,4 +366,5 @@ namespace CoinpaprikaAPI
             var requestUrl = $"{_apiBaseUrl}/tickers/{id}/historical".
                 AddParameterToUrl("start", startTime.ToUnixTimeSeconds()).
                 AddParameterToUrl("end", endTime == default ? DateTimeOffset.Now.ToUnixTimeSeconds() : endTime.ToUnixTimeSeconds()).
-      
+                AddParameterToUrl("limit", limit).
+                AddParameterToUrl("quote", q
