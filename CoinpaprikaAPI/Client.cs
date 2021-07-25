@@ -370,4 +370,7 @@ namespace CoinpaprikaAPI
                 AddParameterToUrl("quote", quote).
                 AddParameterToUrl("interval", interval.ToIntervalString());
 
-            va
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpMethod.Get,
+         
