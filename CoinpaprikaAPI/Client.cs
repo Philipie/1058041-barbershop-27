@@ -367,4 +367,7 @@ namespace CoinpaprikaAPI
                 AddParameterToUrl("start", startTime.ToUnixTimeSeconds()).
                 AddParameterToUrl("end", endTime == default ? DateTimeOffset.Now.ToUnixTimeSeconds() : endTime.ToUnixTimeSeconds()).
                 AddParameterToUrl("limit", limit).
-                AddParameterToUrl("quote", q
+                AddParameterToUrl("quote", quote).
+                AddParameterToUrl("interval", interval.ToIntervalString());
+
+            va
