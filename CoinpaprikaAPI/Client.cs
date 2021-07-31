@@ -389,4 +389,5 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// List exchanges
         /// </summary>
-        /// <param name="quotes">list of quotes to return. Currently allowed 
+        /// <param name="quotes">list of quotes to return. Currently allowed values: USD, BTC, ETH, PLN</param>
+        public async Task<CoinPaprikaEntity<List<ExtendedExch
