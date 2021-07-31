@@ -380,4 +380,11 @@ namespace CoinpaprikaAPI
 
             //var json = await response.Content.ReadAsStringAsync();
 
-            return new CoinPaprikaEntity<List<HistoricalTickerInfo>>(response, false, !response.IsSuccessS
+            return new CoinPaprikaEntity<List<HistoricalTickerInfo>>(response, false, !response.IsSuccessStatusCode);
+        }
+
+        #endregion
+
+        #region exchanges
+        /// <summary>
+        /// List exc
