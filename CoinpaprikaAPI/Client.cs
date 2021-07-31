@@ -387,4 +387,6 @@ namespace CoinpaprikaAPI
 
         #region exchanges
         /// <summary>
-        /// List exc
+        /// List exchanges
+        /// </summary>
+        /// <param name="quotes">list of quotes to return. Currently allowed 
