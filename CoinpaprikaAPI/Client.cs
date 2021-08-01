@@ -395,4 +395,8 @@ namespace CoinpaprikaAPI
             if (quotes?.Any(q => !q.IsSupportedQuoteSymbol()) ?? false)
                 throw new ArgumentOutOfRangeException(nameof(quotes), "The passed quotes contains invalid symbols.");
 
-            var client = BaseClient.Ge
+            var client = BaseClient.GetClient();
+
+            var quotesString = quotes?.ToArrayString() ?? "USD";
+
+    
