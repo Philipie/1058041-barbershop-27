@@ -393,4 +393,6 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<List<ExtendedExchangeInfo>>> GetExchangesAsync(string[] quotes = null)
         {
             if (quotes?.Any(q => !q.IsSupportedQuoteSymbol()) ?? false)
-                throw new ArgumentOutOfRangeExcepti
+                throw new ArgumentOutOfRangeException(nameof(quotes), "The passed quotes contains invalid symbols.");
+
+            var client = BaseClient.Ge
