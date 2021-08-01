@@ -392,4 +392,5 @@ namespace CoinpaprikaAPI
         /// <param name="quotes">list of quotes to return. Currently allowed values: USD, BTC, ETH, PLN</param>
         public async Task<CoinPaprikaEntity<List<ExtendedExchangeInfo>>> GetExchangesAsync(string[] quotes = null)
         {
-            if (quotes?.Any(q
+            if (quotes?.Any(q => !q.IsSupportedQuoteSymbol()) ?? false)
+                throw new ArgumentOutOfRangeExcepti
