@@ -409,4 +409,5 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new Co
+            return new CoinPaprikaEntity<List<ExtendedExchangeInfo>>(response, false, !response.IsSuccessStatusCode, null);
+    
