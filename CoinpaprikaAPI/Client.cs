@@ -417,4 +417,6 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="id">if of the exchange to fetch</param>
         /// <param name="quotes">list of quotes to return. Currently allowed values: USD, BTC, ETH, PLN</param>
-        public async Task<CoinPaprikaEnti
+        public async Task<CoinPaprikaEntity<ExtendedExchangeInfo>> GetExchangeByIdAsync(string id, string[] quotes = null)
+        {
+       
