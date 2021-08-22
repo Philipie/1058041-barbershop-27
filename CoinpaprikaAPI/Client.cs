@@ -415,4 +415,5 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Get Exchange by Id
         /// </summary>
-        ///
+        /// <param name="id">if of the exchange to fetch</param>
+        /// <param name="quotes">list of quo
