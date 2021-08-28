@@ -424,4 +424,6 @@ namespace CoinpaprikaAPI
 
             var client = BaseClient.GetClient();
 
-            var quotesString = quotes?.
+            var quotesString = quotes?.ToArrayString() ?? "USD";
+
+            var requestUrl = $"{_apiBaseUrl}/exchanges/{id}".AddParameterToUrl("quotes
