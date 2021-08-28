@@ -420,4 +420,8 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<ExtendedExchangeInfo>> GetExchangeByIdAsync(string id, string[] quotes = null)
         {
             if (string.IsNullOrWhiteSpace(id))
-                throw new NotSupportedException("id must 
+                throw new NotSupportedException("id must be defined");
+
+            var client = BaseClient.GetClient();
+
+            var quotesString = quotes?.
