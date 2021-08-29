@@ -438,4 +438,9 @@ namespace CoinpaprikaAPI
 
             return new CoinPaprikaEntity<ExtendedExchangeInfo>(response, false, !response.IsSuccessStatusCode);
 
+        }
+
+        /// <summary>
+        /// Get Markets by Eschange Id
+        /// </summary>
    
