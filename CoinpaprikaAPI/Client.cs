@@ -444,4 +444,6 @@ namespace CoinpaprikaAPI
         /// Get Markets by Eschange Id
         /// </summary>
         /// <param name="id">if of the exchange to fetch markets for</param>
-        public async Task
+        public async Task<CoinPaprikaEntity<List<ExchangeMarketInfo>>> GetMarketsByExchangeIdAsync(string id)
+        {
+          
