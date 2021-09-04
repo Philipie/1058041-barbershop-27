@@ -447,4 +447,8 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<List<ExchangeMarketInfo>>> GetMarketsByExchangeIdAsync(string id)
         {
             if (string.IsNullOrWhiteSpace(id))
-                throw new NotSupportedException("id must b
+                throw new NotSupportedException("id must be defined");
+
+            var client = BaseClient.GetClient();
+
+            var requestUrl = $"
