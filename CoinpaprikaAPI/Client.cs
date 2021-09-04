@@ -446,4 +446,5 @@ namespace CoinpaprikaAPI
         /// <param name="id">if of the exchange to fetch markets for</param>
         public async Task<CoinPaprikaEntity<List<ExchangeMarketInfo>>> GetMarketsByExchangeIdAsync(string id)
         {
-          
+            if (string.IsNullOrWhiteSpace(id))
+                throw new NotSupportedException("id must b
