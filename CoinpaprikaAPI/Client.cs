@@ -451,4 +451,7 @@ namespace CoinpaprikaAPI
 
             var client = BaseClient.GetClient();
 
-            var requestUrl = $"
+            var requestUrl = $"{_apiBaseUrl}/exchanges/{id}/markets";
+
+            var request = new HttpRequestMessage()
+            {
