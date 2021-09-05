@@ -463,4 +463,10 @@ namespace CoinpaprikaAPI
 
             var json = await response.Content.ReadAsStringAsync();
 
-            return new CoinPaprikaEntity<List<ExchangeMarketInfo>>(resp
+            return new CoinPaprikaEntity<List<ExchangeMarketInfo>>(response, false, !response.IsSuccessStatusCode, null);
+        }
+
+
+        #endregion
+
+        #region peopl
