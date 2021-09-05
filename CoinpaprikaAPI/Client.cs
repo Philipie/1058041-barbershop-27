@@ -469,4 +469,8 @@ namespace CoinpaprikaAPI
 
         #endregion
 
-        #region peopl
+        #region people
+        /// <summary>
+        /// Get people by ID
+        /// </summary>
+        /// <para
