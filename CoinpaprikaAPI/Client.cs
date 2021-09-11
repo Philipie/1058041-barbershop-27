@@ -475,4 +475,6 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="id">id of the person to fetch</param>
         /// <returns></returns>
-        public async Task<CoinPaprika
+        public async Task<CoinPaprikaEntity<PersonInfo>> GetPeopleByIdAsync(string id)
+        {
+            if (string.IsNull
