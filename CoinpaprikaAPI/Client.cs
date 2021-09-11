@@ -473,4 +473,6 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Get people by ID
         /// </summary>
-        /// <para
+        /// <param name="id">id of the person to fetch</param>
+        /// <returns></returns>
+        public async Task<CoinPaprika
