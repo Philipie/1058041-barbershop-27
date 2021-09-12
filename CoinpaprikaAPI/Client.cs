@@ -477,4 +477,7 @@ namespace CoinpaprikaAPI
         /// <returns></returns>
         public async Task<CoinPaprikaEntity<PersonInfo>> GetPeopleByIdAsync(string id)
         {
-            if (string.IsNull
+            if (string.IsNullOrWhiteSpace(id))
+                throw new NotSupportedException("id must be defined");
+
+            va
