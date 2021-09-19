@@ -484,4 +484,6 @@ namespace CoinpaprikaAPI
 
             var requestUrl = $"{_apiBaseUrl}/people/{id}";
 
-        
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpMeth
