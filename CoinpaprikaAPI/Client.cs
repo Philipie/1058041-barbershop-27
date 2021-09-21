@@ -492,4 +492,9 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new CoinPaprikaEntity<
+            return new CoinPaprikaEntity<PersonInfo>(response, false, !response.IsSuccessStatusCode);
+        }
+
+        #endregion
+
+        #region tag
