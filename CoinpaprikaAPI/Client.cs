@@ -497,4 +497,8 @@ namespace CoinpaprikaAPI
 
         #endregion
 
-        #region tag
+        #region tags
+        /// <summary>
+        /// List tags
+        /// </summary>
+        /// <param name="additiona
