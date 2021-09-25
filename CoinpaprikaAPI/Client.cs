@@ -501,4 +501,4 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// List tags
         /// </summary>
-        /// <param name="additiona
+        /// <param name="additionalFields">list of additional fields to include in query result for each tag. Currently "coins" is the only supporte
