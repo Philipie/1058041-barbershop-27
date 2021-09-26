@@ -505,4 +505,6 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<List<TagInfo>>> GetTagsAsync(string[] additionalFields = null)
         {
             if (additionalFields?.Any(f => !f.IsSupportedTagField()) ?? false)
-                throw new ArgumentOutOfRangeException(nameof(a
+                throw new ArgumentOutOfRangeException(nameof(additionalFields), "The passed quotes contains invalid symbols.");
+
+            var clien
