@@ -507,4 +507,8 @@ namespace CoinpaprikaAPI
             if (additionalFields?.Any(f => !f.IsSupportedTagField()) ?? false)
                 throw new ArgumentOutOfRangeException(nameof(additionalFields), "The passed quotes contains invalid symbols.");
 
-            var clien
+            var client = BaseClient.GetClient();
+
+            var requestUrl = $"{_apiBaseUrl}/tags";
+
+            if (addit
