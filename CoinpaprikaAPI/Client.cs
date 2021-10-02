@@ -512,4 +512,8 @@ namespace CoinpaprikaAPI
             var requestUrl = $"{_apiBaseUrl}/tags";
 
             if (additionalFields != null)
-                requestUrl.AddParameterToUrl("additional_fields", additionalFields.ToArra
+                requestUrl.AddParameterToUrl("additional_fields", additionalFields.ToArrayString());
+
+            var request = new HttpRequestMessage()
+            {
+                M
