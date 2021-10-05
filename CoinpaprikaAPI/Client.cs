@@ -522,4 +522,7 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return n
+            return new CoinPaprikaEntity<List<TagInfo>>(response, false, !response.IsSuccessStatusCode, null);
+        }
+
+     
