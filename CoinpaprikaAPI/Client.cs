@@ -528,4 +528,5 @@ namespace CoinpaprikaAPI
         /// <summary>
         /// Get Tag by Id
         /// </summary>
-        /// <param name=
+        /// <param name="id">Id of the tag to fetch</param>
+        /// <param name="additionalfields">list of addit
