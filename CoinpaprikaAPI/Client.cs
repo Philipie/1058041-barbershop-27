@@ -525,4 +525,7 @@ namespace CoinpaprikaAPI
             return new CoinPaprikaEntity<List<TagInfo>>(response, false, !response.IsSuccessStatusCode, null);
         }
 
-     
+        /// <summary>
+        /// Get Tag by Id
+        /// </summary>
+        /// <param name=
