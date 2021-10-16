@@ -533,4 +533,8 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<TagInfo>> GetTagByIdAsync(string id, string[] additionalFields = null)
         {
             if (string.IsNullOrWhiteSpace(id))
-                throw new NotSupportedException("id must be 
+                throw new NotSupportedException("id must be defined");
+
+            var client = BaseClient.GetClient();
+
+            var requestUrl = $"{_ap
