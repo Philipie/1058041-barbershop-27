@@ -530,4 +530,7 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="id">Id of the tag to fetch</param>
         /// <param name="additionalfields">list of additional fields to include in query result for each tag. Currently "coins" is the only supported value</param>
-        public async Task<CoinPaprikaEntity<TagInfo>> GetTagByIdAsync(string id, string[] additi
+        public async Task<CoinPaprikaEntity<TagInfo>> GetTagByIdAsync(string id, string[] additionalFields = null)
+        {
+            if (string.IsNullOrWhiteSpace(id))
+                throw new NotSupportedException("id must be 
