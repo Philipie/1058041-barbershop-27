@@ -545,4 +545,7 @@ namespace CoinpaprikaAPI
             var request = new HttpRequestMessage()
             {
                 Method = HttpMethod.Get,
-                Req
+                RequestUri = new Uri(requestUrl)
+            };
+
+            var response = await client.SendAsync(req
