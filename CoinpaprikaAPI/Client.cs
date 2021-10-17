@@ -537,4 +537,7 @@ namespace CoinpaprikaAPI
 
             var client = BaseClient.GetClient();
 
-            var requestUrl = $"{_ap
+            var requestUrl = $"{_apiBaseUrl}/tags/{id}";
+
+            if (additionalFields != null)
+                requestUr
