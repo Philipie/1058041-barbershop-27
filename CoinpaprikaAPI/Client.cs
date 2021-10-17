@@ -542,4 +542,7 @@ namespace CoinpaprikaAPI
             if (additionalFields != null)
                 requestUrl.AddParameterToUrl("additional_fields", additionalFields.ToArrayString());
 
-            var request = n
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpMethod.Get,
+                Req
