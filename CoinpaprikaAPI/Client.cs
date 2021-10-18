@@ -550,4 +550,10 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new CoinPaprikaEntity<TagInfo>(response, false, !respo
+            return new CoinPaprikaEntity<TagInfo>(response, false, !response.IsSuccessStatusCode);
+        }
+
+        #endregion
+
+        #region tools
+  
