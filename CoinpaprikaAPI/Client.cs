@@ -556,4 +556,6 @@ namespace CoinpaprikaAPI
         #endregion
 
         #region tools
-  
+        /// <summary>
+        /// Search for currencies/icos/people/exchanges/tags
+        
