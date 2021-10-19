@@ -558,4 +558,6 @@ namespace CoinpaprikaAPI
         #region tools
         /// <summary>
         /// Search for currencies/icos/people/exchanges/tags
-        
+        /// </summary>
+        /// <param name="searchterms">phrase for search eg. "coin"</param>
+        /// <pa
