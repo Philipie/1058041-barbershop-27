@@ -560,4 +560,5 @@ namespace CoinpaprikaAPI
         /// Search for currencies/icos/people/exchanges/tags
         /// </summary>
         /// <param name="searchterms">phrase for search eg. "coin"</param>
-        /// <pa
+        /// <param name="limit">limit of results per category (max 250, default 6)</param>
+        ///
