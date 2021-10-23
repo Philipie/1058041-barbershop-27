@@ -562,4 +562,5 @@ namespace CoinpaprikaAPI
         /// <param name="searchterms">phrase for search eg. "coin"</param>
         /// <param name="limit">limit of results per category (max 250, default 6)</param>
         /// <param name="searchCategories">one or more categories to search (null searches all)</param>
-  
+        /// <param name="onlySymbols">set to true to search currencies by symbol</param>
+      
