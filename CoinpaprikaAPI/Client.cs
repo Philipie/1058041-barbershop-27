@@ -564,4 +564,6 @@ namespace CoinpaprikaAPI
         /// <param name="searchCategories">one or more categories to search (null searches all)</param>
         /// <param name="onlySymbols">set to true to search currencies by symbol</param>
         public async Task<CoinPaprikaEntity<SearchResult>> SearchAsync(string searchterms, int limit = 6, List<SearchCategory> searchCategories = null, bool onlySymbols = false)
-     
+        {
+            if (limit < 1 || limit > 250)
+                throw new ArgumentO
