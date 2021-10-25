@@ -566,4 +566,6 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<SearchResult>> SearchAsync(string searchterms, int limit = 6, List<SearchCategory> searchCategories = null, bool onlySymbols = false)
         {
             if (limit < 1 || limit > 250)
-                throw new ArgumentO
+                throw new ArgumentOutOfRangeException(nameof(limit), "limit must be between 1 and 250");
+
+            string
