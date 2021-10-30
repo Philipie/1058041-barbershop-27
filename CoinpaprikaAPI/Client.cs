@@ -568,4 +568,6 @@ namespace CoinpaprikaAPI
             if (limit < 1 || limit > 250)
                 throw new ArgumentOutOfRangeException(nameof(limit), "limit must be between 1 and 250");
 
-            string
+            string categoriesToSearch = string.Empty;
+            if (searchCategories == null)
+                ca
