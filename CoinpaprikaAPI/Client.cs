@@ -573,4 +573,6 @@ namespace CoinpaprikaAPI
                 categoriesToSearch = "currencies,exchanges,icos,people,tags";
             else
             {
-          
+                foreach (var category in searchCategories)
+                {
+                    if (!string.
