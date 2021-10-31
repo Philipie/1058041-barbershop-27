@@ -570,4 +570,7 @@ namespace CoinpaprikaAPI
 
             string categoriesToSearch = string.Empty;
             if (searchCategories == null)
-                ca
+                categoriesToSearch = "currencies,exchanges,icos,people,tags";
+            else
+            {
+          
