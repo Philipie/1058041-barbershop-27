@@ -575,4 +575,7 @@ namespace CoinpaprikaAPI
             {
                 foreach (var category in searchCategories)
                 {
-                    if (!string.
+                    if (!string.IsNullOrWhiteSpace(categoriesToSearch))
+                        categoriesToSearch += ",";
+
+      
