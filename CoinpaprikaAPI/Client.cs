@@ -580,4 +580,8 @@ namespace CoinpaprikaAPI
 
                     categoriesToSearch += category.ToString().ToLowerInvariant();
                 }
-            
+            }
+
+            var client = BaseClient.GetClient();
+
+            var requestUrl = $"{_apiBaseUrl}/search?q
