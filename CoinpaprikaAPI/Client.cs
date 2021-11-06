@@ -578,4 +578,6 @@ namespace CoinpaprikaAPI
                     if (!string.IsNullOrWhiteSpace(categoriesToSearch))
                         categoriesToSearch += ",";
 
-      
+                    categoriesToSearch += category.ToString().ToLowerInvariant();
+                }
+            
