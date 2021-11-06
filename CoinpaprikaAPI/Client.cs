@@ -584,4 +584,6 @@ namespace CoinpaprikaAPI
 
             var client = BaseClient.GetClient();
 
-            var requestUrl = $"{_apiBaseUrl}/search?q
+            var requestUrl = $"{_apiBaseUrl}/search?q={WebUtility.UrlEncode(searchterms)}&c={categoriesToSearch}&limit={limit}";
+
+            if (onl
