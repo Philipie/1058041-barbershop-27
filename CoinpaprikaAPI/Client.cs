@@ -586,4 +586,7 @@ namespace CoinpaprikaAPI
 
             var requestUrl = $"{_apiBaseUrl}/search?q={WebUtility.UrlEncode(searchterms)}&c={categoriesToSearch}&limit={limit}";
 
-            if (onl
+            if (onlySymbols)
+                requestUrl.AddParameterToUrl("modifier", "symbol_search");
+
+            var 
