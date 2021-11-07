@@ -589,4 +589,6 @@ namespace CoinpaprikaAPI
             if (onlySymbols)
                 requestUrl.AddParameterToUrl("modifier", "symbol_search");
 
-            var 
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpM
