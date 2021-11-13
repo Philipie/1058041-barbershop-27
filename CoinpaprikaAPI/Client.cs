@@ -591,4 +591,8 @@ namespace CoinpaprikaAPI
 
             var request = new HttpRequestMessage()
             {
-                Method = HttpM
+                Method = HttpMethod.Get,
+                RequestUri = new Uri(requestUrl)
+            };
+
+            var response = 
