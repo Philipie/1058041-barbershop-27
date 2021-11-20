@@ -597,4 +597,8 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new CoinPaprik
+            return new CoinPaprikaEntity<SearchResult>(response, false, !response.IsSuccessStatusCode, null);
+        }
+
+        /// <summary>
+        ///
