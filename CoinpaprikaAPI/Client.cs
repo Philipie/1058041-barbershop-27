@@ -604,4 +604,5 @@ namespace CoinpaprikaAPI
         /// Convert currencies
         /// </summary>
         /// <param name="baseCurrencyId">the base currency for conversion</param>
-        /// <param name="quoteCurrencyId">the targe
+        /// <param name="quoteCurrencyId">the target currency for conversion</param>
+        /// <param name="amount">amount of conversion</pa
