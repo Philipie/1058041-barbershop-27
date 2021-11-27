@@ -607,4 +607,5 @@ namespace CoinpaprikaAPI
         /// <param name="quoteCurrencyId">the target currency for conversion</param>
         /// <param name="amount">amount of conversion</param>
         /// <returns></returns>
-        public async Task<CoinPaprikaEntity<PriceCo
+        public async Task<CoinPaprikaEntity<PriceConversionInfo>> ConvertAsync(string baseCurrencyId, string quoteCurrencyId, decimal amount)
+      
