@@ -605,4 +605,6 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="baseCurrencyId">the base currency for conversion</param>
         /// <param name="quoteCurrencyId">the target currency for conversion</param>
-        /// <param name="amount">amount of conversion</pa
+        /// <param name="amount">amount of conversion</param>
+        /// <returns></returns>
+        public async Task<CoinPaprikaEntity<PriceCo
