@@ -608,4 +608,6 @@ namespace CoinpaprikaAPI
         /// <param name="amount">amount of conversion</param>
         /// <returns></returns>
         public async Task<CoinPaprikaEntity<PriceConversionInfo>> ConvertAsync(string baseCurrencyId, string quoteCurrencyId, decimal amount)
-      
+        {
+            if (string.IsNullOrWhiteSpace(baseCurrencyId))
+                throw new NotSupportedExcep
