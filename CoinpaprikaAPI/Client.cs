@@ -610,4 +610,7 @@ namespace CoinpaprikaAPI
         public async Task<CoinPaprikaEntity<PriceConversionInfo>> ConvertAsync(string baseCurrencyId, string quoteCurrencyId, decimal amount)
         {
             if (string.IsNullOrWhiteSpace(baseCurrencyId))
-                throw new NotSupportedExcep
+                throw new NotSupportedException("baseCurrencyId must be defined");
+
+            if (string.IsNullOrWhiteSpace(quoteCurrencyId))
+    
