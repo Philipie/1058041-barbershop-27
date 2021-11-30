@@ -613,4 +613,6 @@ namespace CoinpaprikaAPI
                 throw new NotSupportedException("baseCurrencyId must be defined");
 
             if (string.IsNullOrWhiteSpace(quoteCurrencyId))
-    
+                throw new NotSupportedException("quoteCurrencyId must be defined");
+
+         
