@@ -616,4 +616,8 @@ namespace CoinpaprikaAPI
                 throw new NotSupportedException("quoteCurrencyId must be defined");
 
             if (amount <= (decimal)0.0)
-                throw new NotSupportedException("amount 
+                throw new NotSupportedException("amount must be higher than 0.0");
+
+            var client = BaseClient.GetClient();
+
+            var requestUrl = $"{_a
