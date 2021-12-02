@@ -615,4 +615,5 @@ namespace CoinpaprikaAPI
             if (string.IsNullOrWhiteSpace(quoteCurrencyId))
                 throw new NotSupportedException("quoteCurrencyId must be defined");
 
-         
+            if (amount <= (decimal)0.0)
+                throw new NotSupportedException("amount 
