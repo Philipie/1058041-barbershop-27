@@ -620,4 +620,6 @@ namespace CoinpaprikaAPI
 
             var client = BaseClient.GetClient();
 
-            var requestUrl = $"{_a
+            var requestUrl = $"{_apiBaseUrl}/price-converter".
+                AddParameterToUrl("base_currency_id", baseCurrencyId).
+                Ad
