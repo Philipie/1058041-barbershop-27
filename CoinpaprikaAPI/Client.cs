@@ -622,4 +622,5 @@ namespace CoinpaprikaAPI
 
             var requestUrl = $"{_apiBaseUrl}/price-converter".
                 AddParameterToUrl("base_currency_id", baseCurrencyId).
-                Ad
+                AddParameterToUrl("quote_currency_id", quoteCurrencyId).
+                AddParameterToUrl("amount", 
