@@ -623,4 +623,9 @@ namespace CoinpaprikaAPI
             var requestUrl = $"{_apiBaseUrl}/price-converter".
                 AddParameterToUrl("base_currency_id", baseCurrencyId).
                 AddParameterToUrl("quote_currency_id", quoteCurrencyId).
-                AddParameterToUrl("amount", 
+                AddParameterToUrl("amount", amount);
+
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpMethod.Get,
+   
