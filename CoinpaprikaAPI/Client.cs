@@ -631,4 +631,6 @@ namespace CoinpaprikaAPI
                 RequestUri = new Uri(requestUrl)
             };
 
-            var response = await client.SendAsync
+            var response = await client.SendAsync(request).ConfigureAwait(false);
+
+            return new CoinPaprikaEntity<PriceConversionInfo>(response, false, !r
