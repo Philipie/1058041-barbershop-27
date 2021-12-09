@@ -639,4 +639,7 @@ namespace CoinpaprikaAPI
 
         #region contracts
 
-       
+        /// <summary>
+        /// List contracts platforms
+        /// </summary>
+        //
