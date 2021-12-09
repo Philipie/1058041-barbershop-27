@@ -633,4 +633,10 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new CoinPaprikaEntity<PriceConversionInfo>(response, false, !r
+            return new CoinPaprikaEntity<PriceConversionInfo>(response, false, !response.IsSuccessStatusCode);
+        }
+        #endregion
+
+        #region contracts
+
+       
