@@ -643,4 +643,8 @@ namespace CoinpaprikaAPI
         /// List contracts platforms
         /// </summary>
         /// <returns></returns>
-        public async Task<CoinPaprikaEntity<List<string>>> GetContractP
+        public async Task<CoinPaprikaEntity<List<string>>> GetContractPlatformsAsync()
+        {
+            var client = BaseClient.GetClient();
+
+           
