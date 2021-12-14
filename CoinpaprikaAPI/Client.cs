@@ -657,4 +657,10 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new CoinPaprikaEntity<List<string>>(response, false, !response.IsSuc
+            return new CoinPaprikaEntity<List<string>>(response, false, !response.IsSuccessStatusCode);
+        }
+
+
+        /// <summary>
+        /// Get all contract addressess for platform
+   
