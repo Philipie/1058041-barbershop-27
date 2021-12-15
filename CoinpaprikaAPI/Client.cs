@@ -663,4 +663,5 @@ namespace CoinpaprikaAPI
 
         /// <summary>
         /// Get all contract addressess for platform
-   
+        /// </summary>
+        /// <param name="platformId">the platform id to fetch the addresses
