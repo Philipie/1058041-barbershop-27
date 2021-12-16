@@ -666,4 +666,6 @@ namespace CoinpaprikaAPI
         /// </summary>
         /// <param name="platformId">the platform id to fetch the addresses for</param>
         /// <returns></returns>
-        public async Task<CoinPaprikaEnti
+        public async Task<CoinPaprikaEntity<List<ContractDetailInfo>>> GetContractAddressesForPlatform(string platformId)
+        {
+            if (
