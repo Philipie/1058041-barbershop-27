@@ -668,4 +668,5 @@ namespace CoinpaprikaAPI
         /// <returns></returns>
         public async Task<CoinPaprikaEntity<List<ContractDetailInfo>>> GetContractAddressesForPlatform(string platformId)
         {
-            if (
+            if (string.IsNullOrWhiteSpace(platformId))
+                throw new NotSupportedException($"'{name
