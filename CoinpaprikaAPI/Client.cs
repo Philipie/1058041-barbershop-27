@@ -675,4 +675,7 @@ namespace CoinpaprikaAPI
 
             var requestUrl = $"{_apiBaseUrl}/contracts/{platformId}";
 
-            var request = new HttpRe
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpMethod.Get,
+                RequestUr
