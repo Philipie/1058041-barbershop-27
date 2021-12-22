@@ -683,4 +683,8 @@ namespace CoinpaprikaAPI
 
             var response = await client.SendAsync(request).ConfigureAwait(false);
 
-            return new CoinPaprikaEntity<List<ContractDetailInfo>>(response, false
+            return new CoinPaprikaEntity<List<ContractDetailInfo>>(response, false, !response.IsSuccessStatusCode);
+        }
+
+
+        //not implementing redirects from platform
