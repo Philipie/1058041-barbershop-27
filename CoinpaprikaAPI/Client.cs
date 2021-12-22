@@ -687,4 +687,8 @@ namespace CoinpaprikaAPI
         }
 
 
-        //not implementing redirects from platform
+        //not implementing redirects from platform addresses to ticker and historical values
+        //use the id to fetch those values directly
+
+        #endregion
+ 
