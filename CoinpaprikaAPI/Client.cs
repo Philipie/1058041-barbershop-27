@@ -691,4 +691,5 @@ namespace CoinpaprikaAPI
         //use the id to fetch those values directly
 
         #endregion
- 
+    }
+}
