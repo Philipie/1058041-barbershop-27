@@ -7,4 +7,7 @@ namespace CoinpaprikaAPI.Entity
 {
     public class CoinEventInfo
     {
-    
+        [JsonProperty("date")]
+        public DateTimeOffset Date { get; set; }
+
+        [Js
