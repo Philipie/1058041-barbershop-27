@@ -10,4 +10,8 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("date")]
         public DateTimeOffset Date { get; set; }
 
-        [Js
+        [JsonProperty("date_to")]
+        public string DateTo { get; set; }
+
+        [JsonProperty("name")]
+        p
