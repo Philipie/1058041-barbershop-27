@@ -14,4 +14,7 @@ namespace CoinpaprikaAPI.Entity
         public string DateTo { get; set; }
 
         [JsonProperty("name")]
-        p
+        public string Name { get; set; }
+
+        [JsonProperty("description")]
+        public string Descri
