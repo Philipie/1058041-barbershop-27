@@ -17,4 +17,7 @@ namespace CoinpaprikaAPI.Entity
         public string Name { get; set; }
 
         [JsonProperty("description")]
-        public string Descri
+        public string Description { get; set; }
+
+        [JsonProperty("is_conference")]
+        public bool IsConference { get; set; 
