@@ -28,3 +28,4 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("proof_image_link")]
         public Uri ProofImageLink { get; set; }
     }
+}
