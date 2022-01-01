@@ -5,4 +5,9 @@ using System.Text;
 
 namespace CoinpaprikaAPI.Entity
 {
-    public class CoinPaprikaErr
+    public class CoinPaprikaError
+    {
+        [JsonProperty("error")]
+        public string ErrorMessage { get; set; }
+    }
+}
