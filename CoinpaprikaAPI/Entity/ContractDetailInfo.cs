@@ -1,4 +1,9 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Coinpaprika
+namespace CoinpaprikaAPI.Entity
+{
+    public class ContractDetailInfo
+    {
+        [JsonProperty("address")]
+        publi
