@@ -14,4 +14,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("id")]
         public string Id { get; set; }
 
-        [JsonProperty("a
+        [JsonProperty("active")]
+        public bool Active { get; set; }
+    }
+}
