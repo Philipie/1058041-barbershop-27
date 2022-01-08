@@ -1,2 +1,8 @@
 ﻿using Newtonsoft.Json;
-u
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CoinpaprikaAPI.Entity
+{
+  
