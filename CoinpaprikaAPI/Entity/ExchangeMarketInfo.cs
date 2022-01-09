@@ -8,4 +8,7 @@ namespace CoinpaprikaAPI.Entity
     public class ExchangeMarketInfo
     {
         [JsonProperty("pair")]
-        public str
+        public string Pair { get; set; }
+
+        [JsonProperty("base_currency_id")]
+        public string BaseCurre
