@@ -11,4 +11,7 @@ namespace CoinpaprikaAPI.Entity
         public string Pair { get; set; }
 
         [JsonProperty("base_currency_id")]
-        public string BaseCurre
+        public string BaseCurrencyId { get; set; }
+
+        [JsonProperty("base_currency_name")]
+        public string Ba
