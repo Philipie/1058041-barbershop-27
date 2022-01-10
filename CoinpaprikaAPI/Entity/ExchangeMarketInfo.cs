@@ -17,4 +17,7 @@ namespace CoinpaprikaAPI.Entity
         public string BaseCurrencyName { get; set; }
 
         [JsonProperty("quote_currency_id")]
-        public string QuoteCur
+        public string QuoteCurrencyId { get; set; }
+
+        [JsonProperty("quote_currency_name")]
+        public stri
