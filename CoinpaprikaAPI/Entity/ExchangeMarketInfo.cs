@@ -23,4 +23,7 @@ namespace CoinpaprikaAPI.Entity
         public string QuoteCurrencyName { get; set; }
 
         [JsonProperty("market_url")]
-        public Uri MarketUr
+        public Uri MarketUrl { get; set; }
+
+        [JsonProperty("category")]
+        public string Catego
