@@ -30,3 +30,8 @@ namespace CoinpaprikaAPI.Entity
 
         [JsonProperty("fee_type")]
         public string FeeType { get; set; }
+
+        [JsonProperty("outlier")]
+        public bool Outlier { get; set; }
+
+        [JsonProperty(
