@@ -26,4 +26,7 @@ namespace CoinpaprikaAPI.Entity
         public Uri MarketUrl { get; set; }
 
         [JsonProperty("category")]
-        public string Catego
+        public string Category { get; set; }
+
+        [JsonProperty("fee_type")]
+        public string FeeType { get; set; }
