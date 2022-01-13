@@ -34,4 +34,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("outlier")]
         public bool Outlier { get; set; }
 
-        [JsonProperty(
+        [JsonProperty("reported_volume_24h_share")]
+        public double ReportedVolume24HShare { get; set; }
+
+        [JsonP
