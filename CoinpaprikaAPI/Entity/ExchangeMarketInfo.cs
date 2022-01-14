@@ -37,4 +37,6 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("reported_volume_24h_share")]
         public double ReportedVolume24HShare { get; set; }
 
-        [JsonP
+        [JsonProperty("quotes")]
+        public Dictionary<string, MarketQuoteInfo> Quotes { get; set; }
+
