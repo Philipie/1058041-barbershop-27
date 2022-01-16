@@ -4,4 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Coin
+namespace CoinpaprikaAPI.Entity
+{
+    public class ExtendedCoinInfo
+    {
+        [JsonProperty("description")]
