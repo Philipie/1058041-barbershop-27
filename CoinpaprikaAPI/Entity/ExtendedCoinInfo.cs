@@ -9,3 +9,7 @@ namespace CoinpaprikaAPI.Entity
     public class ExtendedCoinInfo
     {
         [JsonProperty("description")]
+        public string Description { get; set; }
+
+        [JsonProperty("development_status")]
+        pub
