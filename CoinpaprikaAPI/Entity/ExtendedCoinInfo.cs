@@ -12,4 +12,7 @@ namespace CoinpaprikaAPI.Entity
         public string Description { get; set; }
 
         [JsonProperty("development_status")]
-        pub
+        public string DevelopmentStatus { get; set; }
+
+        [JsonProperty("first_data_at")]
+        public DateTim
