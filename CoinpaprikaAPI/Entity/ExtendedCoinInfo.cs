@@ -15,4 +15,7 @@ namespace CoinpaprikaAPI.Entity
         public string DevelopmentStatus { get; set; }
 
         [JsonProperty("first_data_at")]
-        public DateTim
+        public DateTimeOffset FirstDataAt { get; set; }
+
+        [JsonProperty("hardware_wallet")]
+      
