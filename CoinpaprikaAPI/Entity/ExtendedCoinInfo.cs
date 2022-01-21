@@ -18,4 +18,7 @@ namespace CoinpaprikaAPI.Entity
         public DateTimeOffset FirstDataAt { get; set; }
 
         [JsonProperty("hardware_wallet")]
-      
+        public bool HardwareWallet { get; set; }
+
+        [JsonProperty("hash_algorithm")]
+        publi
