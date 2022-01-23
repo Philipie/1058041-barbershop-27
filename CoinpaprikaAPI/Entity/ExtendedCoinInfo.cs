@@ -24,4 +24,9 @@ namespace CoinpaprikaAPI.Entity
         public string HashAlgorithm { get; set; }
 
         [JsonProperty("contract")]
-        public string
+        public string Contract { get; set; }
+
+        [JsonProperty("platform")]
+        public string Platform { get; set; }
+
+    
