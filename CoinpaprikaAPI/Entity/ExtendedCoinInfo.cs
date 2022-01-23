@@ -21,4 +21,7 @@ namespace CoinpaprikaAPI.Entity
         public bool HardwareWallet { get; set; }
 
         [JsonProperty("hash_algorithm")]
-        publi
+        public string HashAlgorithm { get; set; }
+
+        [JsonProperty("contract")]
+        public string
