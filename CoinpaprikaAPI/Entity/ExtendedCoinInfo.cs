@@ -30,4 +30,9 @@ namespace CoinpaprikaAPI.Entity
         public string Platform { get; set; }
 
         [JsonProperty("contracts")]
-        public List<Contract> Contracts { g
+        public List<Contract> Contracts { get; set; }
+
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+     
