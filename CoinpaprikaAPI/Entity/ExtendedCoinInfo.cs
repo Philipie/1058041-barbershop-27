@@ -38,4 +38,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("is_active")]
         public bool IsActive { get; set; }
 
-        [JsonP
+        [JsonProperty("is_new")]
+        public bool IsNew { get; set; }
+
+        [JsonProperty("last_data
