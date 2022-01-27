@@ -41,4 +41,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("is_new")]
         public bool IsNew { get; set; }
 
-        [JsonProperty("last_data
+        [JsonProperty("last_data_at")]
+        public DateTimeOffset LastDataAt { get; set; }
+
+        [JsonProperty("l
