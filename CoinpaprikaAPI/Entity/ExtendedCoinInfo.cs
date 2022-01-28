@@ -44,4 +44,8 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("last_data_at")]
         public DateTimeOffset LastDataAt { get; set; }
 
-        [JsonProperty("l
+        [JsonProperty("links")]
+        public Links Links { get; set; }
+
+        [JsonProperty("links_extended")]
+        public List<Link
