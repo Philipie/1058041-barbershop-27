@@ -48,4 +48,7 @@ namespace CoinpaprikaAPI.Entity
         public Links Links { get; set; }
 
         [JsonProperty("links_extended")]
-        public List<Link
+        public List<LinksExtended> LinksExtended { get; set; }
+
+        [JsonProperty("message")]
+        public string Mes
