@@ -56,4 +56,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPr
+        [JsonProperty("open_source")]
+        public bool OpenSource { get; set; }
+
+        [JsonProperty("org_struct
