@@ -63,4 +63,7 @@ namespace CoinpaprikaAPI.Entity
         public string OrgStructure { get; set; }
 
         [JsonProperty("parent")]
-        public Par
+        public ParentInfo Parent { get; set; }
+
+        [JsonProperty("proof_type")]
+        public string ProofT
