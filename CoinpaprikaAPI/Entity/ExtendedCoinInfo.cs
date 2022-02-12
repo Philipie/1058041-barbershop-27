@@ -66,4 +66,8 @@ namespace CoinpaprikaAPI.Entity
         public ParentInfo Parent { get; set; }
 
         [JsonProperty("proof_type")]
-        public string ProofT
+        public string ProofType { get; set; }
+
+        [JsonProperty("rank")]
+        public long Rank { get; set; }
+
