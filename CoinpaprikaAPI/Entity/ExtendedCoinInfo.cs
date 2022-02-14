@@ -74,4 +74,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("started_at")]
         public DateTimeOffset StartedAt { get; set; }
 
- 
+        [JsonProperty("symbol")]
+        public string Symbol { get; set; }
+
+      
