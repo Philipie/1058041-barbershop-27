@@ -71,3 +71,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("rank")]
         public long Rank { get; set; }
 
+        [JsonProperty("started_at")]
+        public DateTimeOffset StartedAt { get; set; }
+
+ 
