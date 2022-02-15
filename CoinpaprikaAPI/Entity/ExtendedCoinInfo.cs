@@ -77,4 +77,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("symbol")]
         public string Symbol { get; set; }
 
-      
+        [JsonProperty("tags")]
+        public List<TagInfo> Tags { get; set; }
+
+        [JsonP
