@@ -80,4 +80,8 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("tags")]
         public List<TagInfo> Tags { get; set; }
 
-        [JsonP
+        [JsonProperty("team")]
+        public List<TeamInfo> Team { get; set; }
+
+        [JsonProperty("type")]
+   
