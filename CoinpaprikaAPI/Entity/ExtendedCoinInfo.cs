@@ -84,4 +84,7 @@ namespace CoinpaprikaAPI.Entity
         public List<TeamInfo> Team { get; set; }
 
         [JsonProperty("type")]
-   
+        public string Type { get; set; }
+
+        [JsonProperty("whitepaper")]
+        public WhitepaperInfo Whitepape
