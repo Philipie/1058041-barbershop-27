@@ -87,4 +87,7 @@ namespace CoinpaprikaAPI.Entity
         public string Type { get; set; }
 
         [JsonProperty("whitepaper")]
-        public WhitepaperInfo Whitepape
+        public WhitepaperInfo Whitepaper { get; set; }
+
+    }
+}
