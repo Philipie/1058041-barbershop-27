@@ -1,4 +1,10 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-u
+using System.Text;
+
+namespace CoinpaprikaAPI.Entity
+{
+    public class ExtendedExchangeInfo
+    {
+   
