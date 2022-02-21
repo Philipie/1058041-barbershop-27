@@ -10,4 +10,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("id")]
         public string Id { get; set; }
 
-        [JsonPro
+        [JsonProperty("name")]
+        public string Name { get; set; }
+
+        [JsonProperty("active"
