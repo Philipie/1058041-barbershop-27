@@ -17,4 +17,7 @@ namespace CoinpaprikaAPI.Entity
         public bool Active { get; set; }
 
         [JsonProperty("message")]
-      
+        public string Message { get; set; }
+
+        [JsonProperty("links")]
+        public Excha
