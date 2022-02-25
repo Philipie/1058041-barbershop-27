@@ -20,4 +20,7 @@ namespace CoinpaprikaAPI.Entity
         public string Message { get; set; }
 
         [JsonProperty("links")]
-        public Excha
+        public ExchangeLinks Links { get; set; }
+
+        [JsonProperty("markets_data_fetched")]
+       
