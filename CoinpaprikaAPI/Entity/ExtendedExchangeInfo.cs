@@ -23,4 +23,7 @@ namespace CoinpaprikaAPI.Entity
         public ExchangeLinks Links { get; set; }
 
         [JsonProperty("markets_data_fetched")]
-       
+        public bool MarketsDataFetched { get; set; }
+
+        [JsonProperty("adjusted_rank")]
+   
