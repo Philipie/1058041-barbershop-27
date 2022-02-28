@@ -26,4 +26,7 @@ namespace CoinpaprikaAPI.Entity
         public bool MarketsDataFetched { get; set; }
 
         [JsonProperty("adjusted_rank")]
-   
+        public long? AdjustedRank { get; set; }
+
+        [JsonProperty("reported_rank")]
+    
