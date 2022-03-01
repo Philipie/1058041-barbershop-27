@@ -29,4 +29,7 @@ namespace CoinpaprikaAPI.Entity
         public long? AdjustedRank { get; set; }
 
         [JsonProperty("reported_rank")]
-    
+        public long? ReportedRank { get; set; }
+
+        [JsonProperty("currencies")]
+        public long C
