@@ -37,4 +37,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("markets")]
         public long Markets { get; set; }
 
-        [J
+        [JsonProperty("fiats")]
+        public List<FiatInfo> Fiats { get; set; }
+
+        [JsonProperty("quo
