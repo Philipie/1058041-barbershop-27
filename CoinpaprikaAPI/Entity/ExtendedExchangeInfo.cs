@@ -32,4 +32,9 @@ namespace CoinpaprikaAPI.Entity
         public long? ReportedRank { get; set; }
 
         [JsonProperty("currencies")]
-        public long C
+        public long Currencies { get; set; }
+
+        [JsonProperty("markets")]
+        public long Markets { get; set; }
+
+        [J
