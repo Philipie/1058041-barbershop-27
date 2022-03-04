@@ -40,4 +40,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("fiats")]
         public List<FiatInfo> Fiats { get; set; }
 
-        [JsonProperty("quo
+        [JsonProperty("quotes")]
+        public Dictionary<string, ExchangeQuoteInfo> Quotes { get; set; }
+
+        [
