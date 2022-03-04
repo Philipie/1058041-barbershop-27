@@ -43,4 +43,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("quotes")]
         public Dictionary<string, ExchangeQuoteInfo> Quotes { get; set; }
 
-        [
+        [JsonProperty("last_updated")]
+        public DateTimeOffset LastUpdated { get; set; }
+    }
+}
