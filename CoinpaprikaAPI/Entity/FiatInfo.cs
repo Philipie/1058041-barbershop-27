@@ -8,4 +8,7 @@ namespace CoinpaprikaAPI.Entity
     public class FiatInfo
     {
         [JsonProperty("name")]
-        public string Name { get; se
+        public string Name { get; set; }
+
+        [JsonProperty("symbol")]
+        public string Symbol { get; set; }
