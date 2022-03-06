@@ -5,4 +5,7 @@ using System.Text;
 
 namespace CoinpaprikaAPI.Entity
 {
-   
+    public class FiatInfo
+    {
+        [JsonProperty("name")]
+        public string Name { get; se
