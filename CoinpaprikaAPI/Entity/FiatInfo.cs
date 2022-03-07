@@ -12,3 +12,5 @@ namespace CoinpaprikaAPI.Entity
 
         [JsonProperty("symbol")]
         public string Symbol { get; set; }
+    }
+}
