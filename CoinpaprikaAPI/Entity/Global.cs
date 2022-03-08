@@ -11,4 +11,7 @@ namespace CoinpaprikaAPI.Entity
         public long MarketCapUsd { get; set; }
 
         [JsonProperty("volume_24h_usd")]
-        public long V
+        public long Volume24HUsd { get; set; }
+
+        [JsonProperty("bitcoin_dominance_percentage")]
+        public de
