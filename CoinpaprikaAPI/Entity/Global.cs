@@ -20,4 +20,6 @@ namespace CoinpaprikaAPI.Entity
         public long CryptocurrenciesNumber { get; set; }
 
         [JsonProperty("last_updated")]
-        public l
+        public long LastUpdated { get; set; }
+    }
+}
