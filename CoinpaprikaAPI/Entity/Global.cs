@@ -16,4 +16,8 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("bitcoin_dominance_percentage")]
         public decimal BitcoinDominancePercentage { get; set; }
 
-        [JsonProperty("cryptocurrencies_number")
+        [JsonProperty("cryptocurrencies_number")]
+        public long CryptocurrenciesNumber { get; set; }
+
+        [JsonProperty("last_updated")]
+        public l
