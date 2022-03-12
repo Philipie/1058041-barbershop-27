@@ -5,4 +5,7 @@ using System.Text;
 
 namespace CoinpaprikaAPI.Entity
 {
-    public class Histor
+    public class HistoricalTickerInfo
+    {
+        [JsonProperty("timestamp")]
+        public DateTimeOffset Timestamp { get; set; }
