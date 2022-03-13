@@ -13,4 +13,8 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("price")]
         public decimal Price { get; set; }
 
-        [JsonProperty("
+        [JsonProperty("volume_24h")]
+        public long Volume24H { get; set; }
+
+        [JsonProperty("market_cap")]
+        public long MarketC
