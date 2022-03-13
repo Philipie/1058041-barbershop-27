@@ -9,3 +9,8 @@ namespace CoinpaprikaAPI.Entity
     {
         [JsonProperty("timestamp")]
         public DateTimeOffset Timestamp { get; set; }
+
+        [JsonProperty("price")]
+        public decimal Price { get; set; }
+
+        [JsonProperty("
