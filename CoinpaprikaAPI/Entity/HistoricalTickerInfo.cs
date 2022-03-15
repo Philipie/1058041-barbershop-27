@@ -17,4 +17,6 @@ namespace CoinpaprikaAPI.Entity
         public long Volume24H { get; set; }
 
         [JsonProperty("market_cap")]
-        public long MarketC
+        public long MarketCap { get; set; }
+    }
+}
