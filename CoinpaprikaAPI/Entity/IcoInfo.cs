@@ -1,4 +1,10 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-us
+using System.Text;
+
+namespace CoinpaprikaAPI.Entity
+{
+    public class IcoInfo
+    {
+        [
