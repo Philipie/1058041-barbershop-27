@@ -14,4 +14,9 @@ namespace CoinpaprikaAPI.Entity
         public string Name { get; set; }
 
         [JsonProperty("symbol")]
-        public string Symbol { get; set; 
+        public string Symbol { get; set; }
+
+        [JsonProperty("is_new")]
+        public bool IsNew { get; set; }
+    }
+}
