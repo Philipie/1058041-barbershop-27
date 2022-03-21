@@ -18,3 +18,15 @@ namespace CoinpaprikaAPI.Entity
         public List<Uri> Reddit { get; set; }
 
         [JsonProperty("source_code")]
+        public List<Uri> SourceCode { get; set; }
+
+        [JsonProperty("website")]
+        public List<Uri> Website { get; set; }
+
+        [JsonProperty("youtube")]
+        public List<Uri> Youtube { get; set; }
+
+        [JsonProperty("medium")]
+        public List<Uri> Medium { get; set; }
+    }
+}
