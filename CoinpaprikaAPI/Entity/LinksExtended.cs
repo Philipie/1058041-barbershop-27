@@ -9,4 +9,6 @@ namespace CoinpaprikaAPI.Entity
         public Uri Url { get; set; }
 
         [JsonProperty("type")]
-        
+        public string Type { get; set; }
+
+        [JsonProperty("stats", NullValueHandling = NullValu
