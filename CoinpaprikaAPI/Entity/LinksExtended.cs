@@ -11,4 +11,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("type")]
         public string Type { get; set; }
 
-        [JsonProperty("stats", NullValueHandling = NullValu
+        [JsonProperty("stats", NullValueHandling = NullValueHandling.Ignore)]
+        public Stats Stats { get; set; }
+    }
+}
