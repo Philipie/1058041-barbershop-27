@@ -22,3 +22,8 @@ namespace CoinpaprikaAPI.Entity
 
         [JsonProperty("links")]
         public PersonalSocialLinks Links { get; set; }
+
+        [JsonProperty("postions")]
+        public List<PersonalPostionInfo> Postions { get; set; }
+    }
+}
