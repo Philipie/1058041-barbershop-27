@@ -1,3 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System;
-using Syste
+using System.Collections.Generic;
+using System.Text;
+
+namespace CoinpaprikaAPI.Entity
+{
+    public class PersonalSocialLinks
+  
