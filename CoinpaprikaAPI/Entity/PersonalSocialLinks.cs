@@ -8,4 +8,7 @@ namespace CoinpaprikaAPI.Entity
     public class PersonalSocialLinks
     {
         [JsonProperty("github")]
-        public List<PersonalSocialLinkInfo> Github { get; s
+        public List<PersonalSocialLinkInfo> Github { get; set; }
+
+        [JsonProperty("linkedin")]
+        public List<PersonalSocialLinkInfo> Linkedin { get; set; 
