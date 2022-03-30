@@ -17,4 +17,7 @@ namespace CoinpaprikaAPI.Entity
         public List<PersonalSocialLinkInfo> Medium { get; set; }
 
         [JsonProperty("twitter")]
-        public List<PersonalSocialLinkInfo> Twitter { get; s
+        public List<PersonalSocialLinkInfo> Twitter { get; set; }
+
+        [JsonProperty("additional")]
+        public List<PersonalSocialLinkInfo> Addit
