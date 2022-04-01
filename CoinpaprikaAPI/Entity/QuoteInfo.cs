@@ -33,3 +33,21 @@ namespace CoinpaprikaAPI.Entity
         public decimal PercentChange24H { get; set; }
 
         [JsonProperty("percent_change_7d")]
+        public decimal PercentChange7D { get; set; }
+
+        [JsonProperty("percent_change_30d")]
+        public decimal PercentChange30D { get; set; }
+
+        [JsonProperty("percent_change_1y")]
+        public decimal PercentChange1Y { get; set; }
+
+        [JsonProperty("ath_price")]
+        public decimal? AthPrice { get; set; }
+
+        [JsonProperty("ath_date")]
+        public DateTimeOffset? AthDate { get; set; }
+
+        [JsonProperty("percent_from_price_ath")]
+        public decimal? PercentFromPriceAth { get; set; }
+    }
+}
