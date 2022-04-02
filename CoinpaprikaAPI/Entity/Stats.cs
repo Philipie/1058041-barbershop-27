@@ -5,4 +5,7 @@ namespace CoinpaprikaAPI.Entity
 {
     public class Stats
     {
-        [JsonProperty("members", NullValueHandling = NullValueH
+        [JsonProperty("members", NullValueHandling = NullValueHandling.Ignore)]
+        public long? Members { get; set; }
+
+        [JsonProperty("followers", NullV
