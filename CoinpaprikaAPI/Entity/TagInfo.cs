@@ -8,4 +8,9 @@ namespace CoinpaprikaAPI.Entity
     public class TagInfo
     {
         [JsonProperty("id")]
-        public string Id { get; 
+        public string Id { get; set; }
+
+        [JsonProperty("name")]
+        public string Name { get; set; }
+
+        [JsonP
