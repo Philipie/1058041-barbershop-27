@@ -16,4 +16,7 @@ namespace CoinpaprikaAPI.Entity
         [JsonProperty("coin_counter")]
         public long CoinCounter { get; set; }
 
-        [JsonProperty("ico
+        [JsonProperty("ico_counter")]
+        public long IcoCounter { get; set; }
+
+        [JsonProperty("description")]
