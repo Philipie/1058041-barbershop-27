@@ -20,3 +20,7 @@ namespace CoinpaprikaAPI.Entity
         public long IcoCounter { get; set; }
 
         [JsonProperty("description")]
+        public string Description { get; set; }
+
+        [JsonProperty("type")]
+        p
