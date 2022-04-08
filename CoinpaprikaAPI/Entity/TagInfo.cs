@@ -26,4 +26,6 @@ namespace CoinpaprikaAPI.Entity
         public string Type { get; set; }
 
         [JsonProperty("coins")]
-        public List<string> Coins { get
+        public List<string> Coins { get; set; }
+    }
+}
