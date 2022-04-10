@@ -7,4 +7,8 @@ namespace CoinpaprikaAPI.Entity
 {
     public class TeamInfo
     {
-        [JsonProperty(
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+        [JsonProperty("name")]
+        publi
