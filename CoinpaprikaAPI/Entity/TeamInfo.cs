@@ -14,4 +14,6 @@ namespace CoinpaprikaAPI.Entity
         public string Name { get; set; }
 
         [JsonProperty("position")]
-        public string Position { get; 
+        public string Position { get; set; }
+    }
+}
