@@ -3,4 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-nam
+namespace CoinpaprikaAPI.Entity
+{
+    public class WhitepaperInfo
+    {
+        [JsonProperty("link")]
+   
