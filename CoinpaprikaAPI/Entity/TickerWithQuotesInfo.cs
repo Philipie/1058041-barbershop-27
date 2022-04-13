@@ -25,3 +25,18 @@ namespace CoinpaprikaAPI.Entity
         public long CirculatingSupply { get; set; }
 
         [JsonProperty("total_supply")]
+        public long TotalSupply { get; set; }
+
+        [JsonProperty("max_supply")]
+        public long MaxSupply { get; set; }
+
+        [JsonProperty("beta_value")]
+        public decimal BetaValue { get; set; }
+
+        [JsonProperty("last_updated")]
+        public DateTimeOffset LastUpdated { get; set; }
+
+        [JsonProperty("quotes")]
+        public Dictionary<string, QuoteInfo> Quotes { get; set; }
+    }
+}
