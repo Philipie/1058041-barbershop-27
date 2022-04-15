@@ -11,4 +11,6 @@ namespace CoinpaprikaAPI.Entity
         public Uri Link { get; set; }
 
         [JsonProperty("thumbnail")]
-        public Uri Thumbnai
+        public Uri Thumbnail { get; set; }
+    }
+}
