@@ -7,4 +7,6 @@ namespace CoinpaprikaAPI.JsonConverters
 {
     public class StringToDateTimeOffsetConverter : JsonConverter
     {
-        public override bool CanConvert(Type t) => t == typeof(DateT
+        public override bool CanConvert(Type t) => t == typeof(DateTimeOffset) || t == typeof(DateTimeOffset?);
+
+        public override object ReadJson(JsonReader reader, Typ
