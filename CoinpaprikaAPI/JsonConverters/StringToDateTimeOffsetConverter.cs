@@ -5,4 +5,6 @@ using System.Text;
 
 namespace CoinpaprikaAPI.JsonConverters
 {
-    public class StringToDateTimeOffsetCon
+    public class StringToDateTimeOffsetConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(DateT
