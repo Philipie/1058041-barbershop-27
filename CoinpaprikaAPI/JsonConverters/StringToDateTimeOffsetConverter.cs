@@ -15,4 +15,6 @@ namespace CoinpaprikaAPI.JsonConverters
             var value = serializer.Deserialize<string>(reader);
             if (string.IsNullOrWhiteSpace(value))
                 return default(DateTimeOffset);
-        
+            else
+            {
+                if (DateTimeOffset.TryParse(value, out DateTimeOffset dateTim
