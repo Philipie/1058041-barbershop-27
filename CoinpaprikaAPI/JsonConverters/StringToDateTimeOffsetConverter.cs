@@ -13,4 +13,6 @@ namespace CoinpaprikaAPI.JsonConverters
         {
             if (reader.TokenType == JsonToken.Null) return null;
             var value = serializer.Deserialize<string>(reader);
-            if (stri
+            if (string.IsNullOrWhiteSpace(value))
+                return default(DateTimeOffset);
+        
