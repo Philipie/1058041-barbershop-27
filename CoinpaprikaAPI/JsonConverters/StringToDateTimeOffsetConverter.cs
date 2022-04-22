@@ -17,4 +17,8 @@ namespace CoinpaprikaAPI.JsonConverters
                 return default(DateTimeOffset);
             else
             {
-                if (DateTimeOffset.TryParse(value, out DateTimeOffset dateTim
+                if (DateTimeOffset.TryParse(value, out DateTimeOffset dateTimeOffset))
+                {
+                    return dateTimeOffset;
+                }
+        
