@@ -21,4 +21,9 @@ namespace CoinpaprikaAPI.JsonConverters
                 {
                     return dateTimeOffset;
                 }
-        
+            }
+
+            throw new System.Exception("Cannot unmarshal type DateTimeOffset");
+        }
+
+        publ
