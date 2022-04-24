@@ -26,4 +26,4 @@ namespace CoinpaprikaAPI.JsonConverters
             throw new System.Exception("Cannot unmarshal type DateTimeOffset");
         }
 
-        publ
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer
