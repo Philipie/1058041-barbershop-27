@@ -30,4 +30,7 @@ namespace CoinpaprikaAPI.JsonConverters
         {
             if (untypedValue == null)
             {
-                serializer.Serialize(
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (DateTimeOffset)unt
