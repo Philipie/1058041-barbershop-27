@@ -33,4 +33,6 @@ namespace CoinpaprikaAPI.JsonConverters
                 serializer.Serialize(writer, null);
                 return;
             }
-            var value = (DateTimeOffset)unt
+            var value = (DateTimeOffset)untypedValue;
+            serializer.Serialize(writer, value.ToUnixTimeSeconds().ToString());
+   
