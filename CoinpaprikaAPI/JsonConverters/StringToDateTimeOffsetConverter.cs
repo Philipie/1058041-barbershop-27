@@ -35,4 +35,7 @@ namespace CoinpaprikaAPI.JsonConverters
             }
             var value = (DateTimeOffset)untypedValue;
             serializer.Serialize(writer, value.ToUnixTimeSeconds().ToString());
-   
+            return;
+        }
+
+        public static readonly StringToDateTimeOffsetConverter Instan
