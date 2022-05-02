@@ -1,4 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace Coinpaprika
+namespace CoinpaprikaAPI.JsonConverters
+{
+    public class StringToDezimalConverter : JsonConverter
+    {
+   
