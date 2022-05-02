@@ -38,4 +38,6 @@ namespace CoinpaprikaAPI.JsonConverters
             return;
         }
 
-        public static readonly StringToDateTimeOffsetConverter Instan
+        public static readonly StringToDateTimeOffsetConverter Instance = new StringToDateTimeOffsetConverter();
+    }
+}
