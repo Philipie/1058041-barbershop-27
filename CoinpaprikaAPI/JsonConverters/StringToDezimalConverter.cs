@@ -13,4 +13,7 @@ namespace CoinpaprikaAPI.JsonConverters
             var value = serializer.Deserialize<string>(reader);
             if (string.IsNullOrWhiteSpace(value))
                 return default(decimal);
-         
+            else
+            {
+                if (decimal.TryParse(value, out decimal d))
+                {
