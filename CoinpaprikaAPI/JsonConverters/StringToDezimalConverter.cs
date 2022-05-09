@@ -17,3 +17,7 @@ namespace CoinpaprikaAPI.JsonConverters
             {
                 if (decimal.TryParse(value, out decimal d))
                 {
+                    return d;
+                }
+            }
+            throw new System.Exception("
