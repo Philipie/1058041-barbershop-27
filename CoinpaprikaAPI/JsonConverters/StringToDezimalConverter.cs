@@ -20,4 +20,7 @@ namespace CoinpaprikaAPI.JsonConverters
                     return d;
                 }
             }
-            throw new System.Exception("
+            throw new System.Exception("Cannot unmarshal type decimal");
+        }
+
+        public override void WriteJson(JsonWriter wri
