@@ -23,4 +23,6 @@ namespace CoinpaprikaAPI.JsonConverters
             throw new System.Exception("Cannot unmarshal type decimal");
         }
 
-        public override void WriteJson(JsonWriter wri
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValu
