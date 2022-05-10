@@ -25,4 +25,7 @@ namespace CoinpaprikaAPI.JsonConverters
 
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
         {
-            if (untypedValu
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+ 
