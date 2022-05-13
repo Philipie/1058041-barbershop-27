@@ -31,4 +31,8 @@ namespace CoinpaprikaAPI.JsonConverters
                 return;
             }
             var value = (decimal)untypedValue;
-         
+            serializer.Serialize(writer, value.ToString());
+            return;
+        }
+
+        public static reado
