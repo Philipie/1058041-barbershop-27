@@ -35,4 +35,6 @@ namespace CoinpaprikaAPI.JsonConverters
             return;
         }
 
-        public static reado
+        public static readonly StringToDezimalConverter Instance = new StringToDezimalConverter();
+    }
+}
