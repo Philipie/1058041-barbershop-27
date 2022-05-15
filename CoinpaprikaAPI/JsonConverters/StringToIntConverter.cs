@@ -3,4 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CoinpaprikaAPI.Jso
+namespace CoinpaprikaAPI.JsonConverters
+{
+    public class StringToIntConverter : JsonConverter
+    {
+        public override
