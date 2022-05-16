@@ -7,4 +7,6 @@ namespace CoinpaprikaAPI.JsonConverters
 {
     public class StringToIntConverter : JsonConverter
     {
-        public override
+        public override bool CanConvert(Type t) => t == typeof(int) || t == typeof(int?);
+
+        public over
