@@ -9,4 +9,4 @@ namespace CoinpaprikaAPI.JsonConverters
     {
         public override bool CanConvert(Type t) => t == typeof(int) || t == typeof(int?);
 
-        public over
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serial
