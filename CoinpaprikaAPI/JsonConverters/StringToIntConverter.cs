@@ -17,4 +17,7 @@ namespace CoinpaprikaAPI.JsonConverters
                 return default(int);
             else
             {
-                if (
+                if (int.TryParse(value, out int i))
+                {
+                    return i;
+          
