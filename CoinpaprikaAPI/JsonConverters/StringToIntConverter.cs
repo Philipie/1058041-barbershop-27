@@ -20,4 +20,6 @@ namespace CoinpaprikaAPI.JsonConverters
                 if (int.TryParse(value, out int i))
                 {
                     return i;
-          
+                }
+            }
+            throw new System.Exception("Cannot unmarshal type int")
