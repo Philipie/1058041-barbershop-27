@@ -25,4 +25,8 @@ namespace CoinpaprikaAPI.JsonConverters
             throw new System.Exception("Cannot unmarshal type int");
         }
 
-        public override void WriteJson(JsonWriter writer, object untypedVal
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+         
