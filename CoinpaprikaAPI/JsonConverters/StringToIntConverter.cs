@@ -31,4 +31,6 @@ namespace CoinpaprikaAPI.JsonConverters
             {
                 serializer.Serialize(writer, null);
                 return;
-           
+            }
+            var value = (int)untypedValue;
+            serializer.Serialize(writer,
