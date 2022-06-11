@@ -37,4 +37,6 @@ namespace CoinpaprikaAPI.JsonConverters
             return;
         }
 
-        public static readonly StringToIntConverter Instance
+        public static readonly StringToIntConverter Instance = new StringToIntConverter();
+    }
+}
