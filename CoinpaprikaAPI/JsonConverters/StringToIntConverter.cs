@@ -33,4 +33,8 @@ namespace CoinpaprikaAPI.JsonConverters
                 return;
             }
             var value = (int)untypedValue;
-            serializer.Serialize(writer,
+            serializer.Serialize(writer, value.ToString());
+            return;
+        }
+
+        public static readonly StringToIntConverter Instance
