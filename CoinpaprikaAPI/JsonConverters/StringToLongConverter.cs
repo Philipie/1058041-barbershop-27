@@ -1,4 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace CoinpaprikaAPI
+namespace CoinpaprikaAPI.JsonConverters
+{
+    public class StringToLongConverter : JsonConverter
+    {
+        public override 
