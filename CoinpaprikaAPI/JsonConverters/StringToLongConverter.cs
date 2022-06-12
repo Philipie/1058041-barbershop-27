@@ -5,4 +5,6 @@ namespace CoinpaprikaAPI.JsonConverters
 {
     public class StringToLongConverter : JsonConverter
     {
-        public override 
+        public override bool CanConvert(Type t) => t == typeof(long) || t == typeof(long?);
+
+        public overrid
