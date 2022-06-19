@@ -18,4 +18,9 @@ namespace CoinpaprikaAPI.JsonConverters
                 if (long.TryParse(value, out long l))
                 {
                     return l;
-          
+                }
+            }
+            throw new System.Exception("Cannot unmarshal type long");
+        }
+
+ 
