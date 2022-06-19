@@ -23,4 +23,5 @@ namespace CoinpaprikaAPI.JsonConverters
             throw new System.Exception("Cannot unmarshal type long");
         }
 
- 
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+      
