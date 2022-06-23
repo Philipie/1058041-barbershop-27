@@ -27,4 +27,8 @@ namespace CoinpaprikaAPI.JsonConverters
         {
             if (untypedValue == null)
             {
-                serializer.Serializ
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (long)untypedValue;
+    
