@@ -35,3 +35,7 @@ namespace CoinpaprikaAPI.JsonConverters
             return;
         }
 
+        public static readonly StringToLongConverter Instance = new StringToLongConverter();
+    }
+
+}
