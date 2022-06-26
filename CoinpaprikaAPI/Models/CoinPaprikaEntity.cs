@@ -8,4 +8,7 @@ using System.Net.Http;
 
 namespace CoinpaprikaAPI.Models
 {
-    //
+    /// <summary>
+    /// Wrapper around the CoinPaprika API response
+    /// </summary>
+    /// <typepa
