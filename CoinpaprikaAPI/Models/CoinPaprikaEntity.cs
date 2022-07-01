@@ -12,4 +12,8 @@ namespace CoinpaprikaAPI.Models
     /// Wrapper around the CoinPaprika API response
     /// </summary>
     /// <typeparam name="TPaprikaEntity">type of the response data</typeparam>
-    public class CoinPaprikaEntity<TPaprikaEn
+    public class CoinPaprikaEntity<TPaprikaEntity>
+    {
+        private readonly JsonSerializerSettings _jsonSerializerSettings;
+
+        private 
