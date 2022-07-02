@@ -25,4 +25,6 @@ namespace CoinpaprikaAPI.Models
 
             if (!throwSerializationExceptions)
             {
-                _jsonSerializerSettings.Error = dele
+                _jsonSerializerSettings.Error = delegate (object sender, Newtonsoft.Json.Serialization.ErrorEventArgs args)
+                {
+     
