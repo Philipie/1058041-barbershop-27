@@ -23,4 +23,6 @@ namespace CoinpaprikaAPI.Models
             _jsonSerializerSettings = Helpers.GetConfiguredJsonSerializerSettings();
             _jsonSerializer = Helpers.GetConfiguredJsonSerializer();
 
-            if (!t
+            if (!throwSerializationExceptions)
+            {
+                _jsonSerializerSettings.Error = dele
