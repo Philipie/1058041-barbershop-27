@@ -18,4 +18,6 @@ namespace CoinpaprikaAPI.Models
 
         private readonly JsonSerializer _jsonSerializer;
 
-        private CoinPaprikaEntity(bool throwSerialization
+        private CoinPaprikaEntity(bool throwSerializationExceptions)
+        {
+            _jsonSerializerSettings = Helpers.GetConfiguredJs
