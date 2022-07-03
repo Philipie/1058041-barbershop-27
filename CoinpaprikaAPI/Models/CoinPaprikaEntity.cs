@@ -27,4 +27,6 @@ namespace CoinpaprikaAPI.Models
             {
                 _jsonSerializerSettings.Error = delegate (object sender, Newtonsoft.Json.Serialization.ErrorEventArgs args)
                 {
-     
+                    this.Error = new CoinPaprikaError()
+                    {
+                        ErrorMessage =
