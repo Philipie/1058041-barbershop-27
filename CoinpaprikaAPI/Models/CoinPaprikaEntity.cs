@@ -29,4 +29,7 @@ namespace CoinpaprikaAPI.Models
                 {
                     this.Error = new CoinPaprikaError()
                     {
-                        ErrorMessage =
+                        ErrorMessage = args.ErrorContext.Error.Message
+                    };
+
+                    this.RawError = ToRawErro
