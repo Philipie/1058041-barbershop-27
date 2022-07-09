@@ -44,4 +44,4 @@ namespace CoinpaprikaAPI.Models
         }
         
 
-        public CoinPaprikaEntity(HttpResponseMessage respons
+        public CoinPaprikaEntity(HttpResponseMessage response, bool throwSerializationExceptions = false, bool isError = false, List<JsonConverter> converter
