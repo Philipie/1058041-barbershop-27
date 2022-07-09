@@ -46,4 +46,6 @@ namespace CoinpaprikaAPI.Models
 
         public CoinPaprikaEntity(HttpResponseMessage response, bool throwSerializationExceptions = false, bool isError = false, List<JsonConverter> converters = null) : this (throwSerializationExceptions)
         {
-            if (converters?.Any() ?
+            if (converters?.Any() ?? false)
+                foreach (var converter in converters)
+                    
