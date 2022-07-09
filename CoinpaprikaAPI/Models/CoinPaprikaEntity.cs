@@ -39,3 +39,9 @@ namespace CoinpaprikaAPI.Models
 
                     args.ErrorContext.Handled = true;
                 };
+
+            }
+        }
+        
+
+        public CoinPaprikaEntity(HttpResponseMessage respons
