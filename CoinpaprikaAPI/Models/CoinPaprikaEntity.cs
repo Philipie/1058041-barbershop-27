@@ -35,4 +35,7 @@ namespace CoinpaprikaAPI.Models
                     this.RawError = ToRawError(this.Error);
 
                     this.Value = default;                    
-           
+                    this.Raw = null;
+
+                    args.ErrorContext.Handled = true;
+                };
