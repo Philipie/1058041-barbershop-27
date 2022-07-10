@@ -48,4 +48,7 @@ namespace CoinpaprikaAPI.Models
         {
             if (converters?.Any() ?? false)
                 foreach (var converter in converters)
-                    
+                    _jsonSerializer.Converters.Add(converter);
+
+
+            using (var stream = response.Content.ReadAsStreamAsync().
