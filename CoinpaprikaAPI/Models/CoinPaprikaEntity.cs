@@ -51,4 +51,7 @@ namespace CoinpaprikaAPI.Models
                     _jsonSerializer.Converters.Add(converter);
 
 
-            using (var stream = response.Content.ReadAsStreamAsync().
+            using (var stream = response.Content.ReadAsStreamAsync().GetAwaiter().GetResult())
+            {
+                using (var reader = new StreamReader(stream))
+    
