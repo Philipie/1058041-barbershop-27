@@ -54,4 +54,7 @@ namespace CoinpaprikaAPI.Models
             using (var stream = response.Content.ReadAsStreamAsync().GetAwaiter().GetResult())
             {
                 using (var reader = new StreamReader(stream))
-    
+                {
+                    if (!isError)
+                    {
+                        using (v
