@@ -57,4 +57,6 @@ namespace CoinpaprikaAPI.Models
                 {
                     if (!isError)
                     {
-                        using (v
+                        using (var jsonReader = new JsonTextReader(reader))
+                        {
+                       
