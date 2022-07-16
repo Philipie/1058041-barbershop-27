@@ -59,4 +59,5 @@ namespace CoinpaprikaAPI.Models
                     {
                         using (var jsonReader = new JsonTextReader(reader))
                         {
-                       
+                            //never forget this if you are reading the stream twice!
+                            jsonReader.CloseIn
