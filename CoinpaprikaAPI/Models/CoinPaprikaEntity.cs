@@ -62,4 +62,7 @@ namespace CoinpaprikaAPI.Models
                             //never forget this if you are reading the stream twice!
                             jsonReader.CloseInput = false;
 
-                            this.Value = _jsonSerializer.Deserialize<TPaprikaEntity>(j
+                            this.Value = _jsonSerializer.Deserialize<TPaprikaEntity>(jsonReader);
+
+                            if (this.Value != null)
+                       
