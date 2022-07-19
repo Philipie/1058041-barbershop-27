@@ -65,4 +65,7 @@ namespace CoinpaprikaAPI.Models
                             this.Value = _jsonSerializer.Deserialize<TPaprikaEntity>(jsonReader);
 
                             if (this.Value != null)
-                       
+                            {
+                                this.Raw = ToRaw(this.Value);
+
+                   
