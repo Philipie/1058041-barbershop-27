@@ -68,4 +68,6 @@ namespace CoinpaprikaAPI.Models
                             {
                                 this.Raw = ToRaw(this.Value);
 
-                   
+                                this.Error = null;
+                                this.RawError = null;
+               
