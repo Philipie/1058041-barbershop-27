@@ -70,4 +70,7 @@ namespace CoinpaprikaAPI.Models
 
                                 this.Error = null;
                                 this.RawError = null;
-               
+                            }
+                        }
+                    }
+             
