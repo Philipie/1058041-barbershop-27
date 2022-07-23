@@ -76,4 +76,5 @@ namespace CoinpaprikaAPI.Models
                     else
                     {
                         reader.BaseStream.Position = 0;
-    
+                        using (var jsonReader = new JsonTextReader(reader))
+                  
