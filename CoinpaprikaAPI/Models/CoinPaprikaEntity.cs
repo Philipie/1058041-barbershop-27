@@ -73,4 +73,7 @@ namespace CoinpaprikaAPI.Models
                             }
                         }
                     }
-             
+                    else
+                    {
+                        reader.BaseStream.Position = 0;
+    
