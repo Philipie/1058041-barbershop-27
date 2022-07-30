@@ -78,4 +78,6 @@ namespace CoinpaprikaAPI.Models
                         reader.BaseStream.Position = 0;
                         using (var jsonReader = new JsonTextReader(reader))
                         {
-                            this.Error = _jsonSerializer.Deserialize<CoinPaprikaError>(jsonRea
+                            this.Error = _jsonSerializer.Deserialize<CoinPaprikaError>(jsonReader);
+                            if (string.IsNullOrWhiteSpace(this.Error.ErrorMessage))
+             
