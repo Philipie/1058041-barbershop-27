@@ -81,4 +81,6 @@ namespace CoinpaprikaAPI.Models
                             this.Error = _jsonSerializer.Deserialize<CoinPaprikaError>(jsonReader);
                             if (string.IsNullOrWhiteSpace(this.Error.ErrorMessage))
                             {
-                                this.Error = new CoinPaprikaError
+                                this.Error = new CoinPaprikaError()
+                                {
+                                    ErrorMessage = $"StatusCode: {response.
