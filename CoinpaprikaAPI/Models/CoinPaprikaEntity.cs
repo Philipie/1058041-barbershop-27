@@ -88,4 +88,8 @@ namespace CoinpaprikaAPI.Models
                             }
 
                             this.RawError = ToRawError(this.Error);
-                            this.Valu
+                            this.Value = default;
+                            this.Raw = null;
+                        }
+                    }
+      
