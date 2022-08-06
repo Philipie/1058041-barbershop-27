@@ -87,4 +87,5 @@ namespace CoinpaprikaAPI.Models
                                 };
                             }
 
-      
+                            this.RawError = ToRawError(this.Error);
+                            this.Valu
