@@ -100,4 +100,6 @@ namespace CoinpaprikaAPI.Models
 
 
 
-        public string ToRaw(TPaprikaEnt
+        public string ToRaw(TPaprikaEntity entity)
+        {
+            return JsonConvert.SerializeObject(entity, _jsonSerializerSettings)
