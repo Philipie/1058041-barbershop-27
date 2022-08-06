@@ -92,4 +92,12 @@ namespace CoinpaprikaAPI.Models
                             this.Raw = null;
                         }
                     }
-      
+                }
+            }
+
+        }
+
+
+
+
+        public string ToRaw(TPaprikaEnt
