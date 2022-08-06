@@ -83,4 +83,8 @@ namespace CoinpaprikaAPI.Models
                             {
                                 this.Error = new CoinPaprikaError()
                                 {
-                                    ErrorMessage = $"StatusCode: {response.
+                                    ErrorMessage = $"StatusCode: {response.StatusCode} ({response.ReasonPhrase})"
+                                };
+                            }
+
+      
