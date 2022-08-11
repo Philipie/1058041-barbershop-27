@@ -107,4 +107,7 @@ namespace CoinpaprikaAPI.Models
 
         public string ToRawError(CoinPaprikaError error)
         {
-            ret
+            return JsonConvert.SerializeObject(error, _jsonSerializerSettings);
+        }
+                     
+
