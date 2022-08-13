@@ -113,4 +113,7 @@ namespace CoinpaprikaAPI.Models
 
         private TPaprikaEntity FromJson(string json)
         {
-            return string.IsNullOrEmpty(json) ? default(TPaprikaEntity) : JsonConvert.DeserializeObject<TPaprikaEnti
+            return string.IsNullOrEmpty(json) ? default(TPaprikaEntity) : JsonConvert.DeserializeObject<TPaprikaEntity>(json, _jsonSerializerSettings);
+        }
+
+        private CoinPaprikaError ErrorFromJson(string e
