@@ -118,4 +118,7 @@ namespace CoinpaprikaAPI.Models
 
         private CoinPaprikaError ErrorFromJson(string errorJson)
         {
-            return string.IsNullOrEmpty(errorJson) ? default(CoinPaprikaError)
+            return string.IsNullOrEmpty(errorJson) ? default(CoinPaprikaError) : JsonConvert.DeserializeObject<CoinPaprikaError>(errorJson, _jsonSerializerSettings);
+        }
+
+
