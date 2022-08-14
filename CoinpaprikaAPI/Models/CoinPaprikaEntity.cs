@@ -124,4 +124,8 @@ namespace CoinpaprikaAPI.Models
 
         public TPaprikaEntity Value { get; private set; }
 
-        public string Raw { get; p
+        public string Raw { get; private set; }
+
+        public CoinPaprikaError Error { get; private set; }
+
+        publi
