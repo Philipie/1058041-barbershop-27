@@ -128,4 +128,6 @@ namespace CoinpaprikaAPI.Models
 
         public CoinPaprikaError Error { get; private set; }
 
-        publi
+        public string RawError { get; private set; }
+    }
+}
