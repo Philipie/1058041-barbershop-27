@@ -10,4 +10,8 @@ namespace CoinpaprikaAPI.Utils
 {
     public class Helpers
     {
-        #re
+        #region Private Fields
+
+        private static JsonSerializer _jsonSerializer = null;
+
+        private sta
