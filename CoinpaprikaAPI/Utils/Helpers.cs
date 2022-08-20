@@ -16,4 +16,9 @@ namespace CoinpaprikaAPI.Utils
 
         private static JsonSerializerSettings _jsonSerializerSettings = null;
 
-        #endregion Private Fiel
+        #endregion Private Fields
+
+        #region Public Methods
+
+        /// <summary>
+        /// gets the cu
