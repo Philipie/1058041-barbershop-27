@@ -3,4 +3,11 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System;
 using System.Globalization;
-u
+using System.Linq;
+using System.Text;
+
+namespace CoinpaprikaAPI.Utils
+{
+    public class Helpers
+    {
+        #re
