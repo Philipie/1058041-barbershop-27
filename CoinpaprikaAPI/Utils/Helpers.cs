@@ -14,4 +14,6 @@ namespace CoinpaprikaAPI.Utils
 
         private static JsonSerializer _jsonSerializer = null;
 
-        private sta
+        private static JsonSerializerSettings _jsonSerializerSettings = null;
+
+        #endregion Private Fiel
