@@ -24,4 +24,9 @@ namespace CoinpaprikaAPI.Utils
         /// gets the current assembly name
         /// </summary>
         public static string GetAssemblyName()
+        {
+            return typeof(Helpers).Assembly.GetName().Name;
+        }
+
+        /// <summary>
       
