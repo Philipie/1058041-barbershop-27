@@ -21,4 +21,7 @@ namespace CoinpaprikaAPI.Utils
         #region Public Methods
 
         /// <summary>
-        /// gets the cu
+        /// gets the current assembly name
+        /// </summary>
+        public static string GetAssemblyName()
+      
