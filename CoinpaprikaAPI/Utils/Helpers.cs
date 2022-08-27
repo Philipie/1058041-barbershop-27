@@ -29,4 +29,6 @@ namespace CoinpaprikaAPI.Utils
         }
 
         /// <summary>
-      
+        /// gets the current assembly version
+        /// </summary>
+        public static stri
