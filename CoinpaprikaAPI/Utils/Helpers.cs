@@ -31,4 +31,7 @@ namespace CoinpaprikaAPI.Utils
         /// <summary>
         /// gets the current assembly version
         /// </summary>
-        public static stri
+        public static string GetAssemblyVersion()
+        {
+            var assembly = typeof(Helpers).Assembly.GetName();
+ 
