@@ -40,4 +40,6 @@ namespace CoinpaprikaAPI.Utils
         }
 
         /// <summary>
-   
+        /// gets a pre-configured JsonSerializer instance
+        /// </summary>
+        public st
