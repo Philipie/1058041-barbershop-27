@@ -44,4 +44,7 @@ namespace CoinpaprikaAPI.Utils
         /// </summary>
         public static JsonSerializer GetConfiguredJsonSerializer()
         {
-            if (_jsonSerializer == nu
+            if (_jsonSerializer == null)
+            {
+                _jsonSerializer = JsonSerializer.Create(_jsonSerializerSettings);
+          
