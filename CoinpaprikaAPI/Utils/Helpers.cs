@@ -53,4 +53,6 @@ namespace CoinpaprikaAPI.Utils
         }
 
         /// <summary>
-        /// gets a pre-configure
+        /// gets a pre-configured JsonSerializerSettings instance
+        /// </summary>
+        public static JsonSerializerSe
