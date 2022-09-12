@@ -58,4 +58,6 @@ namespace CoinpaprikaAPI.Utils
         public static JsonSerializerSettings GetConfiguredJsonSerializerSettings()
         {
             if (_jsonSerializerSettings == null)
-  
+            {
+                _jsonSerializerSettings = new JsonSerializerSettings()
+                {
