@@ -62,4 +62,6 @@ namespace CoinpaprikaAPI.Utils
                 _jsonSerializerSettings = new JsonSerializerSettings()
                 {
                     MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
-                    DateParseHandl
+                    DateParseHandling = DateParseHandling.None,
+                    Converters =
+               
