@@ -64,4 +64,6 @@ namespace CoinpaprikaAPI.Utils
                     MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
                     DateParseHandling = DateParseHandling.None,
                     Converters =
-               
+                    {
+                        new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
+       
