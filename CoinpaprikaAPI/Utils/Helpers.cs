@@ -66,4 +66,8 @@ namespace CoinpaprikaAPI.Utils
                     Converters =
                     {
                         new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
-       
+                    },
+                    NullValueHandling = NullValueHandling.Ignore
+                };
+            }
+      
