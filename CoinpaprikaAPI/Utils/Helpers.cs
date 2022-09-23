@@ -70,4 +70,8 @@ namespace CoinpaprikaAPI.Utils
                     NullValueHandling = NullValueHandling.Ignore
                 };
             }
-      
+            return _jsonSerializerSettings;
+        }
+
+        /// <summary>
+        /// gets the logo 
