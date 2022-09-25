@@ -77,4 +77,7 @@ namespace CoinpaprikaAPI.Utils
         /// gets the logo of the specified coinId
         /// </summary>
         /// <param name="coinId">
-        /// the co
+        /// the coinId to construct the logo url for
+        /// </param>
+        /// <returns>
+        /// the url of the 
