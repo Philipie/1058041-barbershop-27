@@ -80,4 +80,7 @@ namespace CoinpaprikaAPI.Utils
         /// the coinId to construct the logo url for
         /// </param>
         /// <returns>
-        /// the url of the 
+        /// the url of the specified coin logo
+        /// </returns>
+        public static string GetLogoUrlByCoinId(string coinId)
+  
