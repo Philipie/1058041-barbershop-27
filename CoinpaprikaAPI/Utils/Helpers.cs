@@ -83,4 +83,8 @@ namespace CoinpaprikaAPI.Utils
         /// the url of the specified coin logo
         /// </returns>
         public static string GetLogoUrlByCoinId(string coinId)
-  
+        {
+            return $"https://static2.coinpaprika.com/coin/{coinId}/logo.png";
+        }
+
+        #endregion Public Met
