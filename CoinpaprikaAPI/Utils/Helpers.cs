@@ -87,4 +87,6 @@ namespace CoinpaprikaAPI.Utils
             return $"https://static2.coinpaprika.com/coin/{coinId}/logo.png";
         }
 
-        #endregion Public Met
+        #endregion Public Methods
+    }
+}
