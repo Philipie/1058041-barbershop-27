@@ -5,4 +5,7 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinpaprikaAPI", "CoinpaprikaAPI\CoinpaprikaAPI.csproj", "{5611A3F1-D67B-4173-A858-E53646564AB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Test
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{D42D39EF-32B0-4784-A9A4-AB8992F42C4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurat
