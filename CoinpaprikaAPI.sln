@@ -8,4 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{D42D39EF-32B0-4784-A9A4-AB8992F42C4E}"
 EndProject
 Global
-	GlobalSection(SolutionConfigurat
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Releas
