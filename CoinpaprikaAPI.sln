@@ -22,4 +22,7 @@ Global
 		{D42D39EF-32B0-4784-A9A4-AB8992F42C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D42D39EF-32B0-4784-A9A4-AB8992F42C4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	Globa
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	Glo
