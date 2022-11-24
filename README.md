@@ -11,4 +11,4 @@ Async C# Client for the [CoinPaprika API](https://api.coinpaprika.com/). The cur
 CoinPaprika API Client is [availabe on Nuget](https://www.nuget.org/packages/CoinpaprikaAPI/).
 
 ### Dependencies
-The 
+The library depends on [JSON.net](https://www.nuget.org/packages/Newtonsoft.Json), which is just si
