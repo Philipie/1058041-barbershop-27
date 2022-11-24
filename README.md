@@ -8,4 +8,7 @@ Async C# Client for the [CoinPaprika API](https://api.coinpaprika.com/). The cur
 
 
 ### Install
-CoinPaprika API
+CoinPaprika API Client is [availabe on Nuget](https://www.nuget.org/packages/CoinpaprikaAPI/).
+
+### Dependencies
+The 
