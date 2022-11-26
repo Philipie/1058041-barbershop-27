@@ -13,4 +13,4 @@ CoinPaprika API Client is [availabe on Nuget](https://www.nuget.org/packages/Coi
 ### Dependencies
 The library depends on [JSON.net](https://www.nuget.org/packages/Newtonsoft.Json), which is just simply the best Json-library for .NET; It should get installed automatically (with the Nuget package), but depending on your project, you may have to install it manually via Nuget Package Manager/CLI. 
 
-Thi
+This library is using .NET Standard 2.0, you can check compatibility of your project [here](ht
