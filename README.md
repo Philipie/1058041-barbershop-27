@@ -16,4 +16,10 @@ The library depends on [JSON.net](https://www.nuget.org/packages/Newtonsoft.Json
 This library is using .NET Standard 2.0, you can check compatibility of your project [here](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support).
 
 
-###
+### Getting started
+```
+CoinpaprikaAPI.Client client = new CoinpaprikaAPI.Client();
+```
+
+### Generic return type
+All 
