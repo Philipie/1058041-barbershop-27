@@ -22,4 +22,5 @@ CoinpaprikaAPI.Client client = new CoinpaprikaAPI.Client();
 ```
 
 ### Generic return type
-All requests return a CoinPaprikaEntity with a generic type (TPaprikaEntity). The CoinPapri
+All requests return a CoinPaprikaEntity with a generic type (TPaprikaEntity). The CoinPaprikaEntity provides these properties:
++ `Value`, based on the type specified by 
