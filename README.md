@@ -26,4 +26,6 @@ All requests return a CoinPaprikaEntity with a generic type (TPaprikaEntity). Th
 + `Value`, based on the type specified by the API call
 + `Raw` , json value returned by the API)
 + `Error`, may be an HTTP-Error or an API-Error (check the ErrorMessage property for details)
-+ `RawError` , json value of the Error propert
++ `RawError` , json value of the Error property
+
+If the call was succesfull, `Error` is `null` and `Value` provides the returned data from the
