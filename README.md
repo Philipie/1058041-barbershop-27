@@ -25,4 +25,5 @@ CoinpaprikaAPI.Client client = new CoinpaprikaAPI.Client();
 All requests return a CoinPaprikaEntity with a generic type (TPaprikaEntity). The CoinPaprikaEntity provides these properties:
 + `Value`, based on the type specified by the API call
 + `Raw` , json value returned by the API)
-+ `Error`, may be an HTTP-Error or an A
++ `Error`, may be an HTTP-Error or an API-Error (check the ErrorMessage property for details)
++ `RawError` , json value of the Error propert
