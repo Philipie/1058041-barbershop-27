@@ -36,4 +36,8 @@ If the call was succesfull, `Error` is `null` and `Value` provides the returned 
 ```
 var globals = await client.GetClobalsAsync();
 ```
-returns single CoinPaprikaEntity of Type [Global](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/C
+returns single CoinPaprikaEntity of Type [Global](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/Global.cs)
+
+##### Get all coins listed on Coinpaprika
+```
+var coins = await client.GetCoinsAsync
