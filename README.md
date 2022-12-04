@@ -28,4 +28,12 @@ All requests return a CoinPaprikaEntity with a generic type (TPaprikaEntity). Th
 + `Error`, may be an HTTP-Error or an API-Error (check the ErrorMessage property for details)
 + `RawError` , json value of the Error property
 
-If the call was succesfull, `Error` is `null` and `Value` provides the returned data from the
+If the call was succesfull, `Error` is `null` and `Value` provides the returned data from the API.
+
+### API
+
+##### Get global information
+```
+var globals = await client.GetClobalsAsync();
+```
+returns s
