@@ -40,4 +40,6 @@ returns single CoinPaprikaEntity of Type [Global](https://github.com/MSiccDev/Co
 
 ##### Get all coins listed on Coinpaprika
 ```
-var coins = await client.GetCoinsAsync
+var coins = await client.GetCoinsAsync();
+```
+returns CoinPaprikaEntity with a List of objects of Type [CoinInfo](https://github.com/
