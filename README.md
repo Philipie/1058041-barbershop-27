@@ -44,4 +44,8 @@ var coins = await client.GetCoinsAsync();
 ```
 returns CoinPaprikaEntity with a List of objects of Type [CoinInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/CoinInfo.cs)
 
-##### Get coin details
+##### Get coin details by Id
+```
+var coins = await client.GetCoinByIdAsync("btc-bitcoin");
+```
+returns single CoinPaprikaEnt
