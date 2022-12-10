@@ -48,4 +48,4 @@ returns CoinPaprikaEntity with a List of objects of Type [CoinInfo](https://gith
 ```
 var coins = await client.GetCoinByIdAsync("btc-bitcoin");
 ```
-returns single CoinPaprikaEnt
+returns single CoinPaprikaEntity of Type [ExtendedCoinInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/Extend
