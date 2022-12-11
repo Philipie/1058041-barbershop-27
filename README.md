@@ -48,4 +48,8 @@ returns CoinPaprikaEntity with a List of objects of Type [CoinInfo](https://gith
 ```
 var coins = await client.GetCoinByIdAsync("btc-bitcoin");
 ```
-returns single CoinPaprikaEntity of Type [ExtendedCoinInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/Extend
+returns single CoinPaprikaEntity of Type [ExtendedCoinInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/ExtendedCoinInfo.cs)
+
+##### Get twitter timeline for coin Id
+```
+var coins = await client.GetTwitterTimeline
