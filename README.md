@@ -52,4 +52,6 @@ returns single CoinPaprikaEntity of Type [ExtendedCoinInfo](https://github.com/M
 
 ##### Get twitter timeline for coin Id
 ```
-var coins = await client.GetTwitterTimeline
+var coins = await client.GetTwitterTimelineForCoinAsync("btc-bitcoin");
+```
+returns CoinPaprikaEntity with a List of objects of Ty
