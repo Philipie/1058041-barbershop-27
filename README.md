@@ -58,4 +58,6 @@ returns CoinPaprikaEntity with a List of objects of Type [CoinTweetInfo](https:/
 
 ##### Get coin events by coin Id
 ```
-var coins = await client.GetEventsForCoinAsyn
+var coins = await client.GetEventsForCoinAsync("btc-bitcoin");
+```
+returns CoinPaprikaEntity with a List of objects of Type [CoinEventInfo](https://github.c
