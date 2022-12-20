@@ -60,4 +60,9 @@ returns CoinPaprikaEntity with a List of objects of Type [CoinTweetInfo](https:/
 ```
 var coins = await client.GetEventsForCoinAsync("btc-bitcoin");
 ```
-returns CoinPaprikaEntity with a List of objects of Type [CoinEventInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/CoinEventInfo
+returns CoinPaprikaEntity with a List of objects of Type [CoinEventInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/CoinEventInfo.cs)
+
+##### Get exchanges by coin Id
+```
+var coins = await client.GetExchangesForCoinAsync("btc-bitcoin");
+``
