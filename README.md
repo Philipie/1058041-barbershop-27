@@ -65,4 +65,5 @@ returns CoinPaprikaEntity with a List of objects of Type [CoinEventInfo](https:/
 ##### Get exchanges by coin Id
 ```
 var coins = await client.GetExchangesForCoinAsync("btc-bitcoin");
-``
+```
+returns CoinPaprikaEntity with a List of objects of Type [ExchangeInfo](https://github.com/MSiccDev/Coin
