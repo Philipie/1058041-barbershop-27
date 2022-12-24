@@ -70,4 +70,6 @@ returns CoinPaprikaEntity with a List of objects of Type [ExchangeInfo](https://
 
 ##### Get markets by coin Id
 ```
-var coins 
+var coins = await client.GetMarketsForCoinAsync("btc-bitcoin");
+```
+returns CoinPaprikaEntity with a List of objects of Type [
