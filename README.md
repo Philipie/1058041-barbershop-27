@@ -76,4 +76,6 @@ returns CoinPaprikaEntity with a List of objects of Type [MarketInfo](https://gi
 
 ##### Get latest Open/High/Low/Close values with volume and market_cap by coin Id
 ```
-va
+var coins = await client.GetLatestOhlcForCoinAsync("btc-bitcoin", "USD");
+```
+returns CoinPapr
