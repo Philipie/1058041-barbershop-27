@@ -78,4 +78,4 @@ returns CoinPaprikaEntity with a List of objects of Type [MarketInfo](https://gi
 ```
 var coins = await client.GetLatestOhlcForCoinAsync("btc-bitcoin", "USD");
 ```
-returns CoinPapr
+returns CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/
