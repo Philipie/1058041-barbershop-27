@@ -78,4 +78,6 @@ returns CoinPaprikaEntity with a List of objects of Type [MarketInfo](https://gi
 ```
 var coins = await client.GetLatestOhlcForCoinAsync("btc-bitcoin", "USD");
 ```
-returns CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/
+returns CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/OhlcValue.cs)
+
+##### Get historical Open/High/Low/Close value
