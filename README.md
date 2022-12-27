@@ -85,4 +85,4 @@ returns CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://git
 var firstOfMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
 var end = DateTime.Now.Subtract(TimeSpan.FromDays(1));
 
-var ohlcvHistorical = await _
+var ohlcvHistorical = await _client.GetHistoricalOhlcForCoinAsync("btc-bitcoin", new DateTimeOffset(firstOfMonth), end, 200, "
