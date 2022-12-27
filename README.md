@@ -82,4 +82,7 @@ returns CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://git
 
 ##### Get historical Open/High/Low/Close values with volume and market_cap by coin Id
 ```
-var firstOfMonth = new DateTime(DateTime.Now.Year, DateTim
+var firstOfMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+var end = DateTime.Now.Subtract(TimeSpan.FromDays(1));
+
+var ohlcvHistorical = await _
