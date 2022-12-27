@@ -80,4 +80,6 @@ var coins = await client.GetLatestOhlcForCoinAsync("btc-bitcoin", "USD");
 ```
 returns CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/OhlcValue.cs)
 
-##### Get historical Open/High/Low/Close value
+##### Get historical Open/High/Low/Close values with volume and market_cap by coin Id
+```
+var firstOfMonth = new DateTime(DateTime.Now.Year, DateTim
