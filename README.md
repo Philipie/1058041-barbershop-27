@@ -90,4 +90,6 @@ var ohlcvHistorical = await _client.GetHistoricalOhlcForCoinAsync("btc-bitcoin",
 ```
 returns single CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/OhlcValue.cs)
 
-##### Get t
+##### Get today's Open/High/Low/Close values with volume and market_cap by coin Id
+```
+var coins = await client.GetTodayOhlcForC
