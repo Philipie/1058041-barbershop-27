@@ -92,4 +92,6 @@ returns single CoinPaprikaEntity with a List of objects of Type [OhlcValue](http
 
 ##### Get today's Open/High/Low/Close values with volume and market_cap by coin Id
 ```
-var coins = await client.GetTodayOhlcForC
+var coins = await client.GetTodayOhlcForCoinAsync("btc-bitcoin", "USD");
+```
+returns CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://github.
