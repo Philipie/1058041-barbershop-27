@@ -88,4 +88,6 @@ var end = DateTime.Now.Subtract(TimeSpan.FromDays(1));
 var ohlcvHistorical = await _client.GetHistoricalOhlcForCoinAsync("btc-bitcoin", new DateTimeOffset(firstOfMonth), end, 200, "USD");
 
 ```
-returns single CoinPaprikaEntity with a List of objects of Type [OhlcValue](https
+returns single CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/OhlcValue.cs)
+
+##### Get t
