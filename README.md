@@ -94,4 +94,6 @@ returns single CoinPaprikaEntity with a List of objects of Type [OhlcValue](http
 ```
 var coins = await client.GetTodayOhlcForCoinAsync("btc-bitcoin", "USD");
 ```
-returns CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://github.
+returns CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/OhlcValue.cs)
+
+##### Get ticker information for a
