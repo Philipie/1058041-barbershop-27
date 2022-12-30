@@ -100,4 +100,4 @@ returns CoinPaprikaEntity with a List of objects of Type [OhlcValue](https://git
 ```
 var tickers = await client.GetTickers(new[] { "USD", "CHF", "BTC" });
 ```
-retur
+returns CoinPaprikaEntity with a List of objects of Type [TickerWithQuotesInfo](https://github.com/MS
