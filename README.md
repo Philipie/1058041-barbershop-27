@@ -102,4 +102,6 @@ var tickers = await client.GetTickers(new[] { "USD", "CHF", "BTC" });
 ```
 returns CoinPaprikaEntity with a List of objects of Type [TickerWithQuotesInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/TickerWithQuotesInfo.cs)
 
-##### Get ticker
+##### Get ticker information for specific coin
+```
+var ticker = await client.GetTickerForCoin("btc-bitcoin");
