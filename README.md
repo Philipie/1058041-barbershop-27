@@ -105,3 +105,5 @@ returns CoinPaprikaEntity with a List of objects of Type [TickerWithQuotesInfo](
 ##### Get ticker information for specific coin
 ```
 var ticker = await client.GetTickerForCoin("btc-bitcoin");
+```
+returns single CoinPaprikaEntity of Type [TickerInfo](https://github.com/MSiccDev/Coinpapri
