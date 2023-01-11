@@ -112,4 +112,4 @@ returns single CoinPaprikaEntity of Type [TickerInfo](https://github.com/MSiccDe
 ```
 var ticker = await _client.GetHistoricalTickerForIdAsync(id, new DateTimeOffset(DateTime.Now.Subtract(TimeSpan.FromDays(1))), DateTimeOffset.Now, 1000, "USD", TickerInterval.OneHour);
 ```
-retur
+returns CoinPaprikaEntity with a List of objects of Type [HistoricalTickerInfo](https://github.com/MSiccDev/CoinpaprikaAPI/b
