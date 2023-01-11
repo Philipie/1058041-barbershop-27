@@ -109,4 +109,5 @@ var ticker = await client.GetTickerForCoin("btc-bitcoin");
 returns single CoinPaprikaEntity of Type [TickerInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/TickerInfo.cs)
 
 ##### Get historical ticker information for specific coin
-`
+```
+var ticker = await _client.GetHistoricalTickerForIdAsync(id, new DateTimeOffset(DateTime.Now.
