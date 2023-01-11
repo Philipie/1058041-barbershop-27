@@ -110,4 +110,6 @@ returns single CoinPaprikaEntity of Type [TickerInfo](https://github.com/MSiccDe
 
 ##### Get historical ticker information for specific coin
 ```
-var ticker = await _client.GetHistoricalTickerForIdAsync(id, new DateTimeOffset(DateTime.Now.
+var ticker = await _client.GetHistoricalTickerForIdAsync(id, new DateTimeOffset(DateTime.Now.Subtract(TimeSpan.FromDays(1))), DateTimeOffset.Now, 1000, "USD", TickerInterval.OneHour);
+```
+retur
