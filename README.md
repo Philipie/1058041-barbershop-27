@@ -119,4 +119,4 @@ returns CoinPaprikaEntity with a List of objects of Type [HistoricalTickerInfo](
 ```
 var exchanges = await client.GetExchangesAsync(new[] { "USD", "CHF", "BTC" });
 ```
-returns CoinPapr
+returns CoinPaprikaEntity with a List of objects of Type [ExtendedExchangeInfo](https://github.com/MSiccDev/CoinpaprikaAPI/b
