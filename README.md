@@ -116,3 +116,7 @@ returns CoinPaprikaEntity with a List of objects of Type [HistoricalTickerInfo](
 
 
 ##### Get a list of exchanges by quotes
+```
+var exchanges = await client.GetExchangesAsync(new[] { "USD", "CHF", "BTC" });
+```
+returns CoinPapr
