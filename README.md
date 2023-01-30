@@ -127,4 +127,8 @@ var ticker = await client.GetExchangeByIdAsync("binance", new[] { "USD", "CHF", 
 ```
 returns single CoinPaprikaEntity of Type [ExtendedExchangeInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/ExtendedExchangeInfo.cs)
 
-##### Get a list markets of exchang
+##### Get a list markets of exchange by Id
+```
+var markets = await client.GetMarketsByExchangeIdAsync("binance");
+```
+returns CoinPap
