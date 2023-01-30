@@ -123,4 +123,6 @@ returns CoinPaprikaEntity with a List of objects of Type [ExtendedExchangeInfo](
 
 ##### Get exchange by id
 ```
-var ticker = a
+var ticker = await client.GetExchangeByIdAsync("binance", new[] { "USD", "CHF", "BTC" });
+```
+return
