@@ -131,4 +131,4 @@ returns single CoinPaprikaEntity of Type [ExtendedExchangeInfo](https://github.c
 ```
 var markets = await client.GetMarketsByExchangeIdAsync("binance");
 ```
-returns CoinPap
+returns CoinPaprikaEntity with a List of objects of Type [ExchangeMarketInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/m
