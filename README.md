@@ -137,4 +137,7 @@ returns CoinPaprikaEntity with a List of objects of Type [ExchangeMarketInfo](ht
 ```
 var person = await client.GetPeopleByIdAsync("vitalik-buterin");
 ```
-returns single CoinPaprikaEntity of Type [PersonI
+returns single CoinPaprikaEntity of Type [PersonInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/PersonInfo.cs)
+
+
+##### Ge
