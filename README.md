@@ -140,4 +140,8 @@ var person = await client.GetPeopleByIdAsync("vitalik-buterin");
 returns single CoinPaprikaEntity of Type [PersonInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/PersonInfo.cs)
 
 
-##### Ge
+##### Get a list of tags
+```
+var tags = await client.GetTagsAsync(new[] { "coins", "icos" });
+```
+returns 
