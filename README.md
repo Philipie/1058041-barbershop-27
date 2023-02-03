@@ -144,4 +144,9 @@ returns single CoinPaprikaEntity of Type [PersonInfo](https://github.com/MSiccDe
 ```
 var tags = await client.GetTagsAsync(new[] { "coins", "icos" });
 ```
-returns CoinPaprikaEntity with a List of objects of Type [TagInfo](https://github.com/MSiccDev/Coinpapri
+returns CoinPaprikaEntity with a List of objects of Type [TagInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/TagInfo.cs)
+
+
+##### Get tag info by Id
+```
+var tag =
