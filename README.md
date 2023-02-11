@@ -149,4 +149,6 @@ returns CoinPaprikaEntity with a List of objects of Type [TagInfo](https://githu
 
 ##### Get tag info by Id
 ```
-var tag =
+var tag = await client.GetTagByIdAsync("smart-contracts", new[] { "coins", "icos" });
+```
+returns single CoinPaprikaE
