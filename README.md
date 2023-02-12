@@ -151,4 +151,4 @@ returns CoinPaprikaEntity with a List of objects of Type [TagInfo](https://githu
 ```
 var tag = await client.GetTagByIdAsync("smart-contracts", new[] { "coins", "icos" });
 ```
-returns single CoinPaprikaE
+returns single CoinPaprikaEntity of Type [TagInfo](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/Coinpaprika
