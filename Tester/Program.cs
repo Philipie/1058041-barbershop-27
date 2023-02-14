@@ -145,3 +145,86 @@ namespace Tester
             var ticker = await _client.GetTickersAsync(new[] { "USD", "BTC" });
 
             if (ticker.Error == null)
+            {
+                Console.WriteLine("CoinPaprika Tickers: ");
+                foreach (var t in ticker.Value.OrderBy(c => c.Rank))
+                {
+                    Console.WriteLine($"{t.Name}({t.Id}({t.Symbol})) - {t.Rank} - BTC:{t.Quotes["BTC"].Price}/USD:{t.Quotes["USD"].Price} - PercentChange24h:{t.Quotes["BTC"].PercentChange24H}%(BTC)/{t.Quotes["USD"].PercentChange24H}%(USD)");
+                }
+
+                Console.WriteLine("Press any key to finish test...");
+                Console.ReadLine();
+                Console.WriteLine("Bye!");
+            }
+        }
+
+        static async Task TestTickerAsync()
+        {
+            Console.WriteLine("Testing coin Ticker info:");
+
+            Console.WriteLine("enter coin id:");
+
+            var id = Console.ReadLine();
+
+            Console.WriteLine($"fetching ticker for id {id} ...");
+
+            var ticker = await _client.GetTickerForIdAsync(id);
+
+            if (ticker.Error == null)
+            {
+                Console.WriteLine($"{ticker.Value.Name}({ticker.Value.Id}({ticker.Value.Symbol})) - {ticker.Value.Rank} - BTC:{ticker.Value.PriceBtc}/USD:{ticker.Value.PriceUsd} - PercentChange24h:{ticker.Value.PercentChange24H}");
+                Console.WriteLine("Press any key to finish test...");
+            }
+            else
+            {
+                Console.WriteLine($"CoinPaprika returned an error: {ticker.Error.ErrorMessage}");
+            }
+
+            Console.ReadLine();
+            Console.WriteLine("Bye!");
+        }
+
+
+        static async Task TestHistoricalTickerAsync()
+        {
+            Console.WriteLine("Testing historical Ticker info:");
+
+            Console.WriteLine("enter coin id:");
+
+            var id = Console.ReadLine();
+
+            Console.WriteLine($"fetching ticker for id {id} ...");
+
+            var ticker = await _client.GetHistoricalTickerForIdAsync(id, new DateTimeOffset(DateTime.Now.Subtract(TimeSpan.FromDays(1))), DateTimeOffset.Now, 1000, "USD", TickerInterval.OneHour);
+
+            if (ticker.Error == null)
+            {
+                foreach (var historic in ticker.Value)
+                {
+                    Console.WriteLine($"(Ticker ({id}) : {historic.Timestamp}: ({historic.Price})) - {historic.Volume24H}");
+
+                }
+                Console.WriteLine("Press any key to finish test...");
+            }
+            else
+            {
+                Console.WriteLine($"CoinPaprika returned an error: {ticker.Error.ErrorMessage}");
+            }
+
+            Console.ReadLine();
+            Console.WriteLine("Bye!");
+        }
+
+        static async Task TestPeopleInfoAsync()
+        {
+            Console.WriteLine("Testing Personinfo:");
+
+            Console.WriteLine("enter person-id:");
+
+            var id = Console.ReadLine();
+
+            Console.WriteLine($"fetching person with id {id} ...");
+
+            var person = await _client.GetPeopleByIdAsync(id);
+
+            if (person.Error == null)
