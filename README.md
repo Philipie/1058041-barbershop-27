@@ -165,4 +165,4 @@ returns CoinPaprikaEntity of Type [SearchResult](https://github.com/MSiccDev/Coi
 ```
 var converionResult = await _client.ConvertAsync("btc-bitcoin", "eth-ethereum", 1.5);
 ```
-re
+returns CoinPaprikaEntity of Type [PriceConversionInfo](https://github.com/MSiccDev/Coinpaprika
