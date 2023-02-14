@@ -157,4 +157,6 @@ returns single CoinPaprikaEntity of Type [TagInfo](https://github.com/MSiccDev/C
 ```
 var searchterms = "coin";
 //passing in null searches all categories
-var searchResult = await client.SearchAsync(searchTe
+var searchResult = await client.SearchAsync(searchTerms, 10, null);
+```
+returns CoinPaprikaEntity of Type [SearchResult](https://github
