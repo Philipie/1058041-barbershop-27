@@ -155,4 +155,6 @@ returns single CoinPaprikaEntity of Type [TagInfo](https://github.com/MSiccDev/C
 
 ##### Search for currencies/icos/people/exchanges/tags
 ```
-var searchterm
+var searchterms = "coin";
+//passing in null searches all categories
+var searchResult = await client.SearchAsync(searchTe
