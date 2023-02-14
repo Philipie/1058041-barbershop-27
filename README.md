@@ -162,4 +162,7 @@ var searchResult = await client.SearchAsync(searchTerms, 10, null);
 returns CoinPaprikaEntity of Type [SearchResult](https://github.com/MSiccDev/CoinpaprikaAPI/blob/master/CoinpaprikaAPI/Entity/SearchResult.cs)
 
 ##### Convert currencies
-`
+```
+var converionResult = await _client.ConvertAsync("btc-bitcoin", "eth-ethereum", 1.5);
+```
+re
