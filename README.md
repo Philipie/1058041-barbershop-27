@@ -169,4 +169,6 @@ returns CoinPaprikaEntity of Type [PriceConversionInfo](https://github.com/MSicc
 
 
 ### License
-CoinPaprika C# Client 
+CoinPaprika C# Client is availabe unter the MIT license, see also the LICENSE file.
+
+
