@@ -228,3 +228,118 @@ namespace Tester
             var person = await _client.GetPeopleByIdAsync(id);
 
             if (person.Error == null)
+            {
+                Console.WriteLine($"Found: {person.Value.Name}:");
+                Console.WriteLine($"{person.Value.Description}");
+            }
+            else
+            {
+                Console.WriteLine($"no person with id {id} found");
+            }
+
+            Console.ReadLine();
+            Console.WriteLine("Bye!");
+        }
+
+        static async Task TestSearchAsync()
+        {
+            Console.WriteLine("Testing search:");
+
+            Console.WriteLine("enter search terms:");
+
+            var searchTerms = Console.ReadLine();
+
+            Console.WriteLine("choose from categories (enter the number, select multiple with comma seperation):");
+            Console.WriteLine("0: All");
+            Console.WriteLine("1: currencies");
+            Console.WriteLine("2: exchanges");
+            Console.WriteLine("3: icos");
+            Console.WriteLine("4: people");
+            Console.WriteLine("5: tags");
+
+            var categories = Console.ReadLine();
+
+            List<SearchCategory> searchCategories = null;
+            if (!categories.Contains("0") && !(categories.Contains("All")))
+            {
+                searchCategories = new List<SearchCategory>();
+
+                if (categories.Contains("1") || categories.Contains("currencies"))
+                    searchCategories.Add(SearchCategory.Currencies);
+                if (categories.Contains("2") || categories.Contains("exchanges"))
+                    searchCategories.Add(SearchCategory.Exchanges);
+                if (categories.Contains("3") || categories.Contains("icos"))
+                    searchCategories.Add(SearchCategory.Icos);
+                if (categories.Contains("4") || categories.Contains("people"))
+                    searchCategories.Add(SearchCategory.People);
+                if (categories.Contains("5") || categories.Contains("tags"))
+                    searchCategories.Add(SearchCategory.Tags);
+            }
+
+            var result = await _client.SearchAsync(searchTerms, 10, searchCategories);
+
+            if (result.Error == null)
+            {
+                Console.WriteLine("search returned following json string as result:");
+                Console.WriteLine(result.Raw);
+
+                Console.WriteLine("Press any key to finish search test...");
+            }
+            else
+            {
+                Console.WriteLine($"CoinPaprika returned an error: {result.Error.ErrorMessage}");
+            }
+
+            Console.ReadLine();
+            Console.WriteLine("Bye!");
+        }
+
+        static async Task TestTagsAsync()
+        {
+            Console.WriteLine("Testing Tags:");
+
+            Console.WriteLine("Fetching available tags:");
+            var listTags = await _client.GetTagsAsync();
+
+            Console.WriteLine($"received a total number of {listTags.Value.Count} TagInfos.");
+
+            Console.ReadLine();
+
+            Console.WriteLine("selecting a random tag from reveived tags list ...");
+
+            var rnd = new Random();
+            var selected = rnd.Next(listTags.Value.Count - 1);
+
+            var tagId = listTags.Value.ElementAt(selected).Id;
+
+            Console.WriteLine($"Fetching info for tag: {tagId}");
+
+            var tagById = await _client.GetTagByIdAsync(tagId);
+
+            Console.WriteLine($"TagInfo: {tagById.Value.Name} ({tagById.Value.Type}) - {tagById.Value.Description}");
+
+            Console.ReadLine();
+            Console.WriteLine("Bye!");
+        }
+
+        static async Task TestExchangesAsync()
+        {
+            Console.WriteLine("Testing Echanges:");
+
+            Console.WriteLine("Fetching available exchanges:");
+            var listExchanges = await _client.GetExchangesAsync(new[] {"USD", "BTC", "ETH" });
+
+            Console.WriteLine($"received a total number of {listExchanges.Value.Count} Exchanges.");
+
+            Console.ReadLine();
+
+            Console.WriteLine("selecting a random exchange from reveived list ...");
+
+            var rnd = new Random();
+            var selected = rnd.Next(listExchanges.Value.Count - 1);
+
+            var exchangeId = listExchanges.Value.ElementAt(selected).Id;
+
+            Console.WriteLine($"Getting Exchange info for id {exchangeId}...");
+
+            var exchangeById = await _client.GetExchangeByIdAsync(exchangeId, new[] { "USD", "BTC", "ETH" });
