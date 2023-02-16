@@ -343,3 +343,88 @@ namespace Tester
             Console.WriteLine($"Getting Exchange info for id {exchangeId}...");
 
             var exchangeById = await _client.GetExchangeByIdAsync(exchangeId, new[] { "USD", "BTC", "ETH" });
+
+            if (exchangeById.Error == null)
+            {
+                Console.WriteLine($"{exchangeById.Value.Name}, Rank: {exchangeById.Value.AdjustedRank}, Web: {exchangeById.Value.Links.Website.FirstOrDefault()} ");
+            }
+
+            Console.WriteLine($"Getting Market info for id {exchangeId} ...");
+
+            var markets = await _client.GetMarketsByExchangeIdAsync(exchangeId);
+
+            if (markets.Error == null)
+            {
+                markets.Value.ForEach(m => Console.WriteLine($"Market: {m.Pair} - {m.Category}, Volume24H%:{m.ReportedVolume24HShare}"));
+            }
+
+
+            Console.ReadLine();
+            Console.WriteLine("Bye!");
+        }
+
+        static async Task TestConversionAsync()
+        {
+            Console.WriteLine("Testing conversion:");
+
+            Console.WriteLine("enter base currency:");
+            var baseCcyId = Console.ReadLine();
+
+            Console.WriteLine("enter target currency:");
+            var targetCcyId = Console.ReadLine();
+
+            Console.WriteLine("enter amount:");
+            var amount = Console.ReadLine();
+
+            if (decimal.TryParse(amount, out var final))
+            {
+                var result = await _client.ConvertAsync(baseCcyId, targetCcyId, final);
+
+                if (result.Error == null)
+                {
+                    Console.WriteLine($"Conversion Result: {final} {result.Value.BaseCurrencyName} are worth {result.Value.Price} {result.Value.QuoteCurrencyName}");
+                    Console.WriteLine("Press any key to finish search test...");
+                }
+                else
+                {
+                    Console.WriteLine($"CoinPaprika returned an error: {result.Error.ErrorMessage}");
+                }
+            }
+
+            Console.ReadLine();
+            Console.WriteLine("Bye!");
+        }
+
+
+        static async Task TestContractsAsync()
+        {
+            Console.WriteLine("Testing Contracts...");
+
+            var platforms = await _client.GetContractPlatformsAsync();
+
+            if (platforms.Error == null)
+            {
+                Console.WriteLine($"Received {platforms.Value.Count} results:");
+                foreach (var platform in platforms.Value)
+                    Console.WriteLine(platform);
+
+                Console.WriteLine("Fetching contract addresses of Neo ....");
+
+                var addresses = await _client.GetContractAddressesForPlatform("neo-neo");
+
+                if (addresses.Error == null)
+                {
+                    Console.WriteLine($"Found {addresses.Value.Count} contract adresses:");
+
+                    foreach (var address in addresses.Value)
+                        Console.WriteLine($"{address.Id} - {address.Address}");
+                }
+
+            }
+
+
+            Console.ReadLine();
+            Console.WriteLine("Bye!");
+        }
+    }
+}
