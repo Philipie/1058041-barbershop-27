@@ -11,4 +11,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D42D39EF-32B0-4784-A9A4-AB8992F42C4E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Tester</RootN
+    <RootNamespace>Tester</RootNamespace>
+    <AssemblyName>Tester</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  
