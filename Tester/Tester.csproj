@@ -42,4 +42,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Re
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference In
