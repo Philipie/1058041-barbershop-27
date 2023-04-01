@@ -60,4 +60,8 @@
   <ItemGroup>
     <ProjectReference Include="..\CoinpaprikaAPI\CoinpaprikaAPI.csproj">
       <Project>{5611a3f1-d67b-4173-a858-e53646564ab5}</Project>
-      <Name>CoinpaprikaAPI</Nam
+      <Name>CoinpaprikaAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newt
